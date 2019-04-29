@@ -1,0 +1,14 @@
+body
+{
+	background-color : #FAFAFA;
+}
+footer {
+	background-color: #c1bfff;
+	clear:both;
+}
+.row {
+	text-align: center;
+}
+.nav-top {
+	text-align: center;
+}
