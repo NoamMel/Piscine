@@ -133,11 +133,15 @@
             </div>
           </div>
         </div>
-</body>
+
 
 <footer>
   <div id="footer-wrapper">
           <footer id="footer" class="container">
+						<div class="nav-top">
+							<a href="#">Revenir en haut de page</a>
+						</div>
+
             <div class="row">
               <div class="col-3 col-6-medium col-12-small">
 
@@ -176,5 +180,8 @@
                   </section>
               </div>
             </div>
-
+</footer>
         </div>
+			</footer>
+			</body>
+			</html>
