@@ -14,7 +14,7 @@
 				<td><input type="text" name="nom"/></td>
 			</tr>
 			<tr>
-				<td> Votre Prénom : </td>
+				<td> Votre Prenom : </td>
 				<td><input type="text" name="prenom"/></td>
 			</tr>
 			<tr>
@@ -34,7 +34,14 @@
 				<td><input type="text" name="adresse"/></td>
 			</tr>
 			<tr>
-				<td colspan="2" align="center"> <input type="submit" name="Créer votre compte" value="Créer votre compte"/> </td>
+				<td> Votre Statut </td>
+				<td> <select id="statut" name="statut">
+					<option value="acheteur"> Acheteur </option>
+					<option value="vendeur"> Vendeur </option>
+				</select> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <input type="submit" name="Creer votre compte" value="Creer votre compte"/> </td>
 			</tr>
 		</table>
 	</form>
@@ -42,18 +49,17 @@
 <div id="compte">
 	<h2> Se connecter </h2>
 	<form>
-		<tr> 
-			<td> Vous etes un acheteur ? </td>
-			<td>   <a href="register-acheteur.html"> <input type="button" name="valider" value="Je suis un acheteur"> </a></td><br> <br>
+		<tr>
+			<td> Entrez votre statut </td>
+			<td> <select onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+				<option>Statut </option>
+				<option value="register-acheteur">  Acheteur </option> 
+				<option value="register-vendeur"> Vendeur </option>
+				<option value="register-admin"> Administrateur </option>
+			</select>
+			</td>
 		</tr>
-		<tr> 
-			<td> Vous etes un vendeur ? </td>
-			<td>   <a href="register-vendeur.html"> <input type="button" name="valider" value="Je suis un vendeur"> </a></td><br> <br>
-		</tr>
-		<tr> 
-			<td> Vous etes un administrateur ? </td>
-			<td>   <a href="register-admin.html"> <input type="button" name="valider" value="Je suis un administrateur"> </a></td>
-		</tr>
+
 	</form>
 	</div>
 </body>
