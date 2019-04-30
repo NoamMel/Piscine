@@ -12,40 +12,43 @@
     <div class="form-row">
       <div class="form-group col-md-1">
         <label for="id">ID</label>
-        <input type="number" class="form-control" id="ID" placeholder="ID">
+        <input type="number" class="form-control" name="id" placeholder="ID">
       </div>
       <div class="form-group col-md-3">
         <label for="titre">Titre</label>
-        <input type="text" class="form-control" id="Titre" placeholder="Titre">
+        <input type="text" class="form-control" name="nom" placeholder="Titre">
       </div>
       <div class="form-group col-md-2">
         <label for="prix">Prix</label>
-        <input type="text" class="form-control" id="Prix" placeholder="Prix">
+        <input type="text" class="form-control" name="prix" placeholder="Prix">
       </div>
     </div>
     <div class="form-row">
-      <div class="form-group col-md-2"><br><br>
+      <div class="form-group col-md-2">
+        <label>Quantité</label>
+        <input type="number" class="form-control" name="quantite" placeholder="Quantité">
+        <br>
       <select class="form-control">
       <option>Sélectionnez une catégorie</option>
       <option name="livre">Livres</option>
       <option name="vetement">Vêtements</option>
-      <option name="musique">Musiques</option> 
+      <option name="musique">Musiques</option>
       <option name="sport">Sports et Loisirs</option>
     </select>
     </div>
       <div class="form-group col-md-4">
         <label for="description">Description</label>
-        <textarea type="text" style="resize: none;" class="form-control" id="Description" rows="3" placeholder="Description"></textarea>
+        <textarea type="text" style="resize: none;" class="form-control" name="description" rows="3" placeholder="Description"></textarea>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-3">
         <label for="image1">Image 1</label>
-        <input type="file" class="form-control-file" id="image1">
+        <input type="file" class="form-control-file" name="image1">
       </div>
       <div class="form-group col-md-3">
         <label for="image2">Image 2</label>
-        <input type="file" class="form-control-file" id="image2">
+        <input type="file" class="form-control-file" name="image2">
       </div>
     </div>
     <br>

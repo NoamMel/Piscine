@@ -6,9 +6,10 @@ body
 	float : right;
 }
 
-#creation {
-	float:left;
-	padding-right: 100px;
+.creation {
+	/* position: static; */
+	/* left: 2px; */
+	padding-left: 50px;
 }
 h2 {
 	text-align: center;
