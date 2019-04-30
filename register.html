@@ -54,62 +54,53 @@
 
 <body>
 	<br>
-	<div id="creation">
-	<!-- <form method="post" action="register.php">
-		<table>
-			<h2> Creer un compte </h2>
-			<tr>
-				<td> Votre Nom : </td>
-				<td><input type="text" name="nom"/></td>
-			</tr>
-			<tr>
-				<td> Votre Prenom : </td>
-				<td><input type="text" name="prenom"/></td>
-			</tr>
-			<tr>
-				<td> Votre Mail : </td>
-				<td><input type="text" name="mail"/></td>
-			</tr>
-			<tr>
-				<td> Votre Pseudo : </td>
-				<td><input type="text" name="pseudo"/></td>
-			</tr>
-			<tr>
-				<td> Votre Mot de Passe : </td>
-				<td><input type="text" name="mdp"/></td>
-			</tr>
-			<tr>
-				<td> Votre Adresse : </td>
-				<td><input type="text" name="adresse"/></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center"> <input type="submit" name="Creer votre compte" value="Creer votre compte"/> </td>
-			</tr>
-		</table>
-	</form> -->
 <div class="creation">
-
+<h3 style="padding-left: 130px;">Créez votre compte</h3>
+<br>
 	<form>
+		<div class="form-group row">
+	    <label class="col-sm-1 col-form-label">Nom</label>
+	    <div class="col-sm-3">
+	      <input type="text" class="form-control" name="nom" placeholder="Nom">
+	    </div>
+	  </div>
+		<div class="form-group row">
+	    <label class="col-sm-1 col-form-label">Prénom</label>
+	    <div class="col-sm-3">
+	      <input type="text" class="form-control" name="prenom" placeholder="Prénom">
+	    </div>
+	  </div>
   <div class="form-group row">
     <label class="col-sm-1 col-form-label">Email</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" placeholder="email@exemple.com">
+      <input type="text" class="form-control" name="mail" placeholder="email@exemple.com">
     </div>
   </div>
+	<div class="form-group row">
+		<label class="col-sm-1 col-form-label">Pseudo</label>
+		<div class="col-sm-3">
+			<input type="text" class="form-control" name="pseudo" placeholder="Pseudo">
+		</div>
+	</div>
   <div class="form-group row">
     <label class="col-sm-1 col-form-label">Mot de passe</label>
     <div class="col-sm-3">
       <input type="password" class="form-control" placeholder="Mot de passe">
     </div>
   </div>
+	<div class="form-group row">
+		<label class="col-sm-1 col-form-label">Adresse</label>
+		<div class="col-sm-3">
+			<input type="text" class="form-control" name="adresse" placeholder="Adresse de livraison">
+		</div>
+	</div>
+	<br>
+	<input style="margin-left: 200px;" type="submit" class="btn btn-primary" value="S'inscrire">
 </form>
-
 </div>
 
-
-</div>
 <div id="compte">
-	<h2> Se connecter </h2>
+	<h3> Se connecter </h3>
 	<form>
 		<tr>
 			<td> Entrez votre statut </td>
