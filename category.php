@@ -51,96 +51,106 @@
 </nav>
 </div>
 </nav>
-
-
 </head>
 
+
+
+
 <body>
-
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="echoDot.jpg" class="d-block w-100" alt="Image Menu 1">
-    </div>
-    <div class="carousel-item">
-      <img src="venteFlash.jpg" class="d-block w-100" alt="Image Menu 2">
-    </div>
-    <div class="carousel-item">
-      <img src="imagepc.jpg" class="d-block w-100" alt="Image Menu 3">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-<!-- Features -->
-        <div id="features-wrapper">
+  <!-- Contenu -->
+        <section id="content">
           <div class="container">
             <div class="row">
-              <div class="col-4 col-12-medium">
+              <div class="col-3 col-12-medium">
 
-                <!-- Box -->
-                  <section class="box feature">
-                    <a href="#" class="image featured"><img src="pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                      <header>
-                        <h2>Nos catégories</h2>
-                        <p>Un large gamme de choix</p>
-                      </header>
-                      <p><a href="category.php">Voir toutes nos catégories</a></p>
-                    </div>
+                <!-- Sidebar de gauche -->
+                  <section>
+                    <header>
+                      <h2>Livres</h2>
+                    </header>
+                    <p>
+                      Trouvez le livre qu'il vous faut dans toutes nos rubriques !
+                      <img src="livre2.jpg" class="d-block w-100" alt="Image Livres2">
+                    </p>
+                    <ul class="link-list">
+                      <li><a href="#">Sed dolore viverra</a></li>
+                      <li><a href="#">Ligula non varius</a></li>
+                      <li><a href="#">Dis parturient montes</a></li>
+                      <li><a href="#">Nascetur ridiculus</a></li>
+                    </ul>
+                  </section>
+                  <section>
+                    <header>
+                      <h2>Musique</h2>
+                    </header>
+                    <p> Meilleures ventes CD, nouveautés CD, sorties à venir et promotions ! 
+                      <img src="musiquevinyle.jpg" class="d-block w-100" alt="Image musique">
+                    </p>
+                    <ul class="link-list">
+                      <li><a href="#">Sed dolore viverra</a></li>
+                      <li><a href="#">Ligula non varius</a></li>
+                      <li><a href="#">Nec sociis natoque</a></li>
+                      <li><a href="#">Penatibus et magnis</a></li>
+                      <li><a href="#">Dis parturient montes</a></li>
+                      <li><a href="#">Nascetur ridiculus</a></li>
+                    </ul>
+                  </section>
+              </div>
+              <div class="col-6 col-12-medium imp-medium">
+
+                <!-- Contenu du milieu, principal -->
+                  <section>
+                    <header>
+                      <h2>Sports et loisirs</h2>
+                      <h3>Bienvenue dans la boutique sports et loisirs de l'ECE-Amazon</h3>
+                    </header>
+                    <p>
+                      Retrouvez tout le matériel nécéssaire pour la musculation, randonnée, camping, cyclisme, football, running, golf et même pour la glisse urbaine !
+                    </p>
+
+                    <p>
+                      <img src="sportLoisir2.jpg" class="d-block w-100" alt="Image category1">
+                    <p>
+                    <!-- IMAGE SPORT ET LOISIRS -->
+                    <img src="sportLoisir.jpg" class="d-block w-100" alt="Image category2">
+                    </p>
                   </section>
 
               </div>
-              <div class="col-4 col-12-medium">
+              <div class="col-3 col-12-medium">
 
-                <!-- Box -->
-                  <section class="box feature">
-                    <a href="#" class="image featured"><img src="pic02.jpg" alt="" /></a>
-                    <div class="inner">
-                      <header>
-                        <h2>Nos ventes flash ! </h2>
-                        <p>Découvrez nos Best-Sellers et plus</p>
-                      </header>
-                      <p><a href="ventesFlash.php">Voir plus</a></p>
-                    </div>
-                  </section>
+                <!--  Sidebar de droite -->
+                  <section>
+                    <header>
+                      <h2>Vêtements</h2>
+                    </header>
+                    <p> Composez votre look avec nos jeans bruts ou t-shirts colorés !
+                      <img src="amazonFashion.jpg" class="d-block w-100" alt="Image musique"></p>
+                    <ul class="link-list">
+                      <li><a href="#">Sed dolore viverra</a></li>
+                      <li><a href="#">Ligula non varius</a></li>
+                      <li><a href="#">Nec sociis natoque</a></li>
+                      <li><a href="#">Penatibus et magnis</a></li>
+                      <li><a href="#">Dis parturient montes</a></li>
+                      <li><a href="#">Nascetur ridiculus</a></li>
+                    </ul>
 
-              </div>
-              <div class="col-4 col-12-medium">
-
-                <!-- Box -->
-                  <section class="box feature">
-                    <a href="#" class="image featured"><img src="pic03.jpg" alt="" /></a>
-                    <div class="inner">
-                      <header>
-                        <h2> À découvrir</h2>
-                        <p>Toutes nos nouveautés</p>
-                      </header>
-                      <p><a href="news.php">Voir plus</a></p>
-                    </div>
-                  </section>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        
+        <!-- Bas de page -->
 
-<footer>
-  <div id="footer-wrapper">
+  <footer>
+    <div id="footer-wrapper">
           <footer id="footer" class="container">
             <div class="nav-top">
               <a href="#">Revenir en haut de page</a>
             </div>
-<div class="footer-center">
-
+            <div class="footer-center">
             <div class="row">
+
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
@@ -151,8 +161,8 @@
                       <li><a href="#">Carrières</a></li>
                     </ul>
                   </section>
-
               </div>
+
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
@@ -165,6 +175,7 @@
                   </section>
 
               </div>
+
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
@@ -177,11 +188,11 @@
                     </ul>
                   </section>
               </div>
-            </div>
 
+            </div>
           </div>
-</footer>
+        </footer>
         </div>
       </footer>
-      </body>
-      </html>
+</body>
+</html>

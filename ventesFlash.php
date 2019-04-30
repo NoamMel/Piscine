@@ -51,96 +51,22 @@
 </nav>
 </div>
 </nav>
-
-
 </head>
 
+
 <body>
+  
+  <!-- Bas de page -->
 
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="echoDot.jpg" class="d-block w-100" alt="Image Menu 1">
-    </div>
-    <div class="carousel-item">
-      <img src="venteFlash.jpg" class="d-block w-100" alt="Image Menu 2">
-    </div>
-    <div class="carousel-item">
-      <img src="imagepc.jpg" class="d-block w-100" alt="Image Menu 3">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-<!-- Features -->
-        <div id="features-wrapper">
-          <div class="container">
-            <div class="row">
-              <div class="col-4 col-12-medium">
-
-                <!-- Box -->
-                  <section class="box feature">
-                    <a href="#" class="image featured"><img src="pic01.jpg" alt="" /></a>
-                    <div class="inner">
-                      <header>
-                        <h2>Nos catégories</h2>
-                        <p>Un large gamme de choix</p>
-                      </header>
-                      <p><a href="category.php">Voir toutes nos catégories</a></p>
-                    </div>
-                  </section>
-
-              </div>
-              <div class="col-4 col-12-medium">
-
-                <!-- Box -->
-                  <section class="box feature">
-                    <a href="#" class="image featured"><img src="pic02.jpg" alt="" /></a>
-                    <div class="inner">
-                      <header>
-                        <h2>Nos ventes flash ! </h2>
-                        <p>Découvrez nos Best-Sellers et plus</p>
-                      </header>
-                      <p><a href="ventesFlash.php">Voir plus</a></p>
-                    </div>
-                  </section>
-
-              </div>
-              <div class="col-4 col-12-medium">
-
-                <!-- Box -->
-                  <section class="box feature">
-                    <a href="#" class="image featured"><img src="pic03.jpg" alt="" /></a>
-                    <div class="inner">
-                      <header>
-                        <h2> À découvrir</h2>
-                        <p>Toutes nos nouveautés</p>
-                      </header>
-                      <p><a href="news.php">Voir plus</a></p>
-                    </div>
-                  </section>
-              </div>
-            </div>
-          </div>
-        </div>
-
-<footer>
-  <div id="footer-wrapper">
+  <footer>
+    <div id="footer-wrapper">
           <footer id="footer" class="container">
             <div class="nav-top">
               <a href="#">Revenir en haut de page</a>
             </div>
-<div class="footer-center">
-
+            <div class="footer-center">
             <div class="row">
+
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
@@ -151,8 +77,8 @@
                       <li><a href="#">Carrières</a></li>
                     </ul>
                   </section>
-
               </div>
+
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
@@ -165,6 +91,7 @@
                   </section>
 
               </div>
+
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
@@ -177,11 +104,12 @@
                     </ul>
                   </section>
               </div>
-            </div>
 
+            </div>
           </div>
-</footer>
+        </footer>
         </div>
       </footer>
-      </body>
-      </html>
+</body> 
+</html>
+
