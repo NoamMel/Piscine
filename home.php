@@ -10,7 +10,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="icone.png" />
   <link rel="stylesheet" type="text/css" href="home.css"/>
-  
+
   <nav>
     <!--Insertion du logo -->
     <img src="newLogo.png" alt="logo" style="float: left;"/>
@@ -37,7 +37,7 @@
               <a class="dropdown-item" href="account.php">Vos informations</a>
               <a class="dropdown-item" href="account.php">Vos commandes</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="register.php">Vous connecter</a> <!-- Register.php -->
+              <a class="dropdown-item" href="register.html">Vous connecter</a> <!-- Register.php -->
             </div>
           </li>
           <li class="nav-item">
