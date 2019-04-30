@@ -49,10 +49,8 @@
     </form>
   </div>
 </nav>
-
-          </header>
-        </div>
-  </nav>
+</div>
+</nav>
 
 
 </head>
@@ -111,7 +109,7 @@
                         <h2>Nos ventes flash ! </h2>
                         <p>Découvrez nos Best-Sellers et plus</p>
                       </header>
-                      <p><a href="venteFlash.php">Voir plus</a></p>
+                      <p><a href="ventesFlash.php">Voir plus</a></p>
                     </div>
                   </section>
 
@@ -135,12 +133,11 @@
         </div>
 
 
-<footer>
-  <div id="footer-wrapper">
+  <div class="footer">
           <footer id="footer" class="container">
-						<div class="nav-top">
-							<a href="#">Revenir en haut de page</a>
-						</div>
+            <div class="nav-top">
+              <a href="#">Revenir en haut de page</a>
+            </div>
 <div class="footer-center">
 
             <div class="row">
@@ -182,9 +179,9 @@
               </div>
             </div>
 
-					</div>
+          </div>
 </footer>
         </div>
-			</footer>
-			</body>
-			</html>
+      </div>
+      </body>
+      </html>
