@@ -154,7 +154,6 @@
 
           </div>
           <div class="col-3 col-6-medium col-12-small">
-
             <!-- Links -->
             <section class="widget links">
               <h3>Vendez !</h3>
