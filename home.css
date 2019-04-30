@@ -1,14 +1,23 @@
 body
 {
 	background-color : #FAFAFA;
+
 }
-footer {
+.footer {
 	background-color: #c1bfff;
 	clear:both;
+	position: absolute;
+	right: 0;
+  	bottom: 0;
+  	left: 0;
+	padding: 2rem;
 }
-.row {
+
+.footer-center 
+{
 	text-align: center;
 }
-.nav-top {
+.nav-top 
+{
 	text-align: center;
 }
