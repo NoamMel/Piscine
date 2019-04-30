@@ -102,9 +102,11 @@
 <div id="compte">
 	<h3> Se connecter </h3>
 	<form>
+		<br>
 		<tr>
 			<td> Entrez votre statut </td>
-			<td> <select onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+			<br><br>
+			<td> <select class="form-control form-group col-md-3" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
 				<option>Statut </option>
 				<option value="register-acheteur">  Acheteur </option>
 				<option value="register-vendeur"> Vendeur </option>
@@ -117,7 +119,6 @@
 	</div>
 
 	<div class="footer">
-		<!-- <footer id="footer" class="container"> -->
 		<div class="nav-top">
 			<a href="#">Revenir en haut de page</a>
 		</div>

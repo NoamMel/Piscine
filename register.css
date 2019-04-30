@@ -3,11 +3,11 @@ body
 	background-color : #FAFAFA;
 }
 #compte {
-	margin-right:  50px;
+	margin-left:  1000px;
+	margin-top: -330px;
 }
-
 .creation {
-	padding-left: 50px;
+	margin-left: 100px;
 }
 h2 {
 	text-align: center;
