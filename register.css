@@ -3,13 +3,11 @@ body
 	background-color : #FAFAFA;
 }
 #compte {
-	float : right;
+	margin-left:  1000px;
+	margin-top: -330px;
 }
-
 .creation {
-	/* position: static; */
-	/* left: 2px; */
-	padding-left: 50px;
+	margin-left: 100px;
 }
 h2 {
 	text-align: center;
