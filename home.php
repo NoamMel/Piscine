@@ -135,7 +135,6 @@
 
 
   <div class="footer">
-    <footer id="footer" class="container">
       <div class="nav-top">
         <a href="#">Revenir en haut de page</a>
       </div>
@@ -177,8 +176,7 @@
         </div>
 
       </div>
-    </footer>
   </div>
-</div>
+
 </body>
 </html>
