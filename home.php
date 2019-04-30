@@ -149,7 +149,6 @@
               <h3>A propos de nous</h3>
               <ul class="style2">
                 <li><a href="#">À propos de notre entreprise</a></li>
-                <li><a href="#">Carrières</a></li>
               </ul>
             </section>
 
@@ -172,7 +171,6 @@
             <section class="widget links">
               <h3>Besoin d'aide ?</h3>
               <ul class="style2">
-                <li><a href="account.html">Voir ou suivre vos commandes</a></li>
                 <li><a href="tarifs.php">Tarifs et options de livraisons</a></li>
                 <li><a href="help.php">Aide</a></li>
               </ul>
