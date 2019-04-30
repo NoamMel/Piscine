@@ -30,18 +30,18 @@
             <a class="nav-link" href="ventesFlash.php">Ventes Flash</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="account.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="account.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Votre compte
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="account.php">Vos informations</a>
-              <a class="dropdown-item" href="account.php">Vos commandes</a>
+              <a class="dropdown-item" href="account.html">Vos informations</a>
+              <a class="dropdown-item" href="account.html">Vos commandes</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="register.html">Vous connecter</a> <!-- Register.php -->
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="bucket.php" tabindex="-1" aria-disabled="false">Mon panier</a>
+            <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -149,18 +149,16 @@
               <h3>A propos de nous</h3>
               <ul class="style2">
                 <li><a href="#">À propos de notre entreprise</a></li>
-                <li><a href="#">Carrières</a></li>
               </ul>
             </section>
 
           </div>
           <div class="col-3 col-6-medium col-12-small">
-
             <!-- Links -->
             <section class="widget links">
               <h3>Vendez !</h3>
               <ul class="style2">
-                <li><a href="sell.php">Vendez sur ECE-Amazon</a></li>
+                <li><a href="sell.html">Vendez sur ECE-Amazon</a></li>
                 <li><a href="#">Devenez partenaires</a></li>
               </ul>
             </section>
@@ -172,7 +170,6 @@
             <section class="widget links">
               <h3>Besoin d'aide ?</h3>
               <ul class="style2">
-                <li><a href="account.php">Voir ou suivre vos commandes</a></li>
                 <li><a href="tarifs.php">Tarifs et options de livraisons</a></li>
                 <li><a href="help.php">Aide</a></li>
               </ul>
