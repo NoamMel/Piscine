@@ -12,9 +12,9 @@ $image1=isset($_POST["image1"])?$_POST["image1"]:"";
 $image2=isset($_POST["image2"])?$_POST["image2"]:"";
 $categorie=$_POST["categorie"];
 $quantite=$_POST['quantite'];
-echo "$categorie";
 
-if($_POST["ajouter"]){
+
+if(isset($_POST["ajouter"])){
 	if($db_found){
 	if($categorie=='livre'){
 		$sql="INSERT INTO livres VALUES (0,'$nom','$image1','$image2','$description',$prix,$quantite)";
@@ -48,9 +48,27 @@ else{
 if(isset($_POST["supprimer"])){
 	if($db_found){
 		if ($categorie=='livre'){
-		$sql="DELETE FROM $categorie WHERE Nom LIKE '%$nom%'";
+		$sql="DELETE FROM livres WHERE Nom LIKE '%$nom%'";
 		$result = mysqli_query($db_handle, $sql);
 		echo "L'article a $nom a été supprimé de la catégorie Livres";
+		}
+		else if ($categorie=='musique'){
+		$sql="DELETE FROM musiques WHERE Nom LIKE '%$nom%'";
+		$result = mysqli_query($db_handle, $sql);
+		echo "L'article a $nom a été supprimé de la catégorie Musiques";
+		}
+		else if ($categorie=='vetement'){
+		$sql="DELETE FROM vetements WHERE Nom LIKE '%$nom%'";
+		$result = mysqli_query($db_handle, $sql);
+		echo "L'article a $nom a été supprimé de la catégorie Vetements";
+		}
+		else if ($categorie=='sport'){
+		$sql="DELETE FROM sports et loisirs WHERE Nom LIKE '%$nom%'";
+		$result = mysqli_query($db_handle, $sql);
+		echo "L'article a $nom a été supprimé de la catégorie Sports et Loisirs";
+		}
+		else{
+			echo "Problème de suppression";
 		}
 		
 	}
