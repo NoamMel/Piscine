@@ -68,9 +68,9 @@
 <div class="card1" style="text-align:center;">
   <img src="getaway.jpg" alt="getaway" style="height:300px; width:auto; display:block; margin-left: auto; margin-right: auto;">
   <div class="card-body">
-    <h5 class="card-title">ECE Amazon vous propose désormais ses services pour vos voyages</h5>
-    <p class="card-text">Découvrez l'agence de voyage en ligne ECE-AMAZON et retrouvez toutes les destinations et sélection de bons plans pour vos vacances.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <h5 class="card-title">ECE Amazon vous propose désormais ses services pour vos voyages et week-ends !</h5>
+    <p class="card-text">Découvrez l'agence de voyage en ligne ECE-AMAZON et retrouvez toutes les destinations de rêve et sélections de bons plans pour vos vacances.</p>
+    <p class="card-text"><small class="text-muted">Last updated 1 week ago</small></p>
   </div>
 </div>
 
