@@ -78,7 +78,7 @@
         </fieldset>
       </li>
   </fieldset>
-  <form>
+  <form action="validation.html">
   <div class="form-group row">
     <label class="col-sm-1 col-form-label">Numéro de carte</label>
     <div class="col-sm-3">
@@ -97,60 +97,42 @@
       <input type="text" class="form-control" name="name" placeholder="Nom du titulaire de la carte">
     </div>
   </div>
+  <legend>Coordonnées de livraison</legend>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Adresse 1</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="addresse" placeholder="Adresse ligne 1">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Adresse 2</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="adresse2" placeholder="Adresse ligne 2">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Ville</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="ville" placeholder="Ville">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Code Postal</label>
+    <div class="col-sm-3">
+      <input type="number" class="form-control" name="postalcode" placeholder="Code Postal">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Pays</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="country" placeholder="Pays">
+    </div>
+  </div>
   <br>
 <!-- Payer, relier avec la BDD, si les coordonnées sont les bonnes, renvoyer sur la page de validation de la commande, sinon faire recommencer et afficher un message d'erreur -->
-  <input style="margin-left: 200px;" type="submit" href="validation.html" class="btn btn-primary" value="Finaliser votre commande">
+  <input style="margin-left: 200px;" type="submit" class="btn btn-primary" value="Finaliser votre commande">
 </form>
 </div>
 
-   <footer>
-    <div id="footer-wrapper">
-          <footer id="footer" class="container">
-            <div class="nav-top">
-              <a href="#">Revenir en haut de page</a>
-            </div>
-            <div class="footer-center">
-            <div class="row">
-
-              <div class="col-3 col-6-medium col-12-small">
-
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>A propos de nous</h3>
-                    <ul class="style2">
-                      <li><a href="https://www.ece.fr/ecole-ingenieur/">À propos de notre entreprise</a></li>
-                    </ul>
-                  </section>
-              </div>
-
-              <div class="col-3 col-6-medium col-12-small">
-
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>Vendez !</h3>
-                    <ul class="style2">
-                      <li><a href="sell.html">Vendez sur ECE-Amazon</a></li>
-                    </ul>
-                  </section>
-
-              </div>
-
-              <div class="col-3 col-6-medium col-12-small">
-
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>Besoin d'aide ?</h3>
-                    <ul class="style2">
-                      <li><a href="tarifs.php">Tarifs et options de livraisons</a></li>
-                      <li><a href="help.php">Aide</a></li>
-                    </ul>
-                  </section>
-              </div>
-
-            </div>
-          </div>
-        </footer>
-        </div>
-      </footer>
 </body> 
 </html>
