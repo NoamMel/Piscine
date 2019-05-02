@@ -74,7 +74,7 @@
   <div class="card-body">
     <h5 class="card-title">Nos livres les plus vendus de l'année </h5>
     <p class="card-text">Un aperçu rapide de nos meilleures ventes de l'année 2019</p>
-    <a href="#" class="btn btn-primary">Voir plus</a>
+    <a href="page-article-livre.html" class="btn btn-primary">Voir plus</a>
   </div>
 </div>
                   </section>
@@ -118,7 +118,7 @@
                   <section>
                     <header style="text-align:center;">
                       <h2>Vêtements</h2>
-                    </header>  
+                    </header>
                     <!-- Mode -->
 <div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 25rem;">
   <img src="amazonFashion.jpg" class="card-img-top" alt="livre">
