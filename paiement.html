@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <link rel="stylesheet" type="text/css" href="ventesFlash.css"/>
+   <link rel="stylesheet" type="text/css" href="paiement.css"/>
 
   <nav>
     <!--Insertion du logo -->
@@ -53,95 +53,57 @@
 </nav>
 </head>
 
-
 <body>
-<!-- Saut de ligne -->
-
 <br>
-
-<!-- Livre -->
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Livres (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="lettresPersanes2.jpg" style="width:auto; height:190px;">
-        <img src="harryPotter.jpg" style="width:auto; height:190px;">
-        <img src="lettresPersanes.jpeg" style="width:auto; height:190px;">
-        <img src="miserables.jpg" style="width:auto; height:190px;">
-      </div>
-    </div>
-  </div>
-  <!-- Musique -->
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Musique (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="music1.jpg" style="width:130px; height:130px;">
-        <img src="music2.jpg" style="width:130px; height:130px;">
-        <img src="music3.jpg" style="width:130px; height:130px;">
-        <img src="music4.jpg" style="width:auto; height:150px;">
-        <img src="music5.jpg" style="width:auto; height:150px;">
-      </div>
+<div class="creation">
+<h3 style="padding-left: 130px;">Coordonnées bancaires</h3>
+<br>
+  <fieldset>
+        <fieldset>
+          <legend>Type de carte bancaire</legend>
+          <ol>
+            <li>
+              <input id=visa name=type_de_carte type=radio>
+              <label for=visa>VISA</label>
+            </li>
+            <li>
+              <input id=amex name=type_de_carte type=radio>
+              <label for=amex>American Express</label>
+            </li>
+            <li>
+              <input id=mastercard name=type_de_carte type=radio>
+              <label for=mastercard>Mastercard</label>
+            </li>
+          </ol>
+        </fieldset>
+      </li>
+  </fieldset>
+  <form>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Numéro de carte</label>
+    <div class="col-sm-3">
+      <input type="num_carte" class="form-control" name="num" placeholder="Numéro de carte">
     </div>
   </div>
-<!-- Vêtements -->
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Vêtements (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="clothes1.jpg" style="width:auto; height:130px;">
-        <img src="clothes2.jpeg" style="width:auto; height:130px;">
-        <img src="clothes3.jpg" style="width:auto; height:130px;">
-        <img src="clothes4.jpg" style="width:auto; height:130px;">
-        <img src="clothes5.jpeg" style="width:auto; height:130px;">
-        <img src="clothes6.jpeg" style="width:auto; height:130px;">
-
-      </div>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Code sécurité</label>
+    <div class="col-sm-3">
+      <input type="code" class="form-control" name="code" placeholder="Code sécurité à 3 chiffres">
     </div>
   </div>
-<!-- Sports et loisirs -->
-<div class="card">
-    <div class="card-header" id="headingFour">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Sports et loisirs (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="sports1.jpg" style="width:auto; height:130px;">
-        <img src="sports2.jpg" style="width:auto; height:130px;">
-        <img src="sports3.jpg" style="width:auto; height:130px;">
-        <img src="sports4.jpg" style="width:auto; height:130px;">
-        <img src="sports5.jpg" style="width:auto; height:130px;">
-      </div>
+  <div class="form-group row">
+    <label class="col-sm-1 col-form-label">Nom du titulaire de la carte</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" name="name" placeholder="Nom du titulaire de la carte">
     </div>
   </div>
+  <br>
+<!-- Payer, relier avec la BDD, si les coordonnées sont les bonnes, renvoyer sur la page de validation de la commande, sinon faire recommencer et afficher un message d'erreur -->
+  <input style="margin-left: 200px;" type="submit" href="validation.html" class="btn btn-primary" value="Finaliser votre commande">
+</form>
 </div>
 
-  <!-- Bas de page -->
-
-  <footer>
+   <footer>
     <div id="footer-wrapper">
           <footer id="footer" class="container">
             <div class="nav-top">
@@ -192,4 +154,3 @@
       </footer>
 </body> 
 </html>
-

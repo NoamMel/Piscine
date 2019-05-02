@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Connexion administrateur</title>
+	<title>Ajouter et Supprimer un vendeur</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -29,14 +29,14 @@
 						<a class="nav-link" href="ventesFlash.php">Ventes Flash</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="account.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="account.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Votre compte
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="account.php">Vos informations</a>
-							<a class="dropdown-item" href="account.php">Vos commandes</a>
+							<a class="dropdown-item" href="account.html">Vos informations</a>
+							<a class="dropdown-item" href="account.html">Vos commandes</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="register.php">Vous connecter</a> <!-- Register.php -->
+							<a class="dropdown-item" href="register.html">Vous connecter</a> <!-- Register.php -->
 						</div>
 					</li>
 					<li class="nav-item">
@@ -54,21 +54,25 @@
 
 <body style="text-align: center;">
 	<br>
-	<h2> S'identifier en tant qu'Administrateur </h2>
-	<form method="post" action="register.php">
+	<h2>Ajouter ou supprimer un vendeur</h2>
+	<form method="post" action="ajout-vendeur.php">
 		<br>
 		<div class="form-group col-md-3 mb-2" style="float:none; margin: 0 auto;">
 			<label>Adresse mail</label>
-			<input type="email" class="form-control" id="mail" name="mail" placeholder="Email">
+			<input type="email" class="form-control" name="mail" placeholder="Email">
 		</div>
-		<div class="form-group col-md-3" style="float:none; margin: 0 auto;">
-			<label>Mot de passe</label>
-			<input type="password" class="form-control" id="mdp" name="mdp" placeholder="Mot de passe">
+		<div class="form-group col-md-3 mb-2" style="float:none; margin: 0 auto;">
+			<label>Pseudo</label>
+			<input type="text" class="form-control" name="pseudo" placeholder="Pseudo">
+		</div>
+		<div class="form-group col-md-3 mb-2" style="float:none; margin: 0 auto;">
+			<label>Nom</label>
+			<input type="text" class="form-control" name="nom" placeholder="Nom">
 		</div>
 		<br>
-		<input type="submit" class="btn btn-primary" value="Se connecter">
+		<input type="submit" class="btn btn-primary" name="ajouter" value="Ajouter un vendeur">
+		<input type="submit" class="btn btn-primary" name="supprimer" value="Supprimer un vendeur">
 	</form>
-
 
 	<div class="footer">
       <div class="nav-top">

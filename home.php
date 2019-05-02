@@ -135,7 +135,6 @@
 
 
   <div class="footer">
-    <footer id="footer" class="container">
       <div class="nav-top">
         <a href="#">Revenir en haut de page</a>
       </div>
@@ -148,7 +147,7 @@
             <section class="widget links">
               <h3>A propos de nous</h3>
               <ul class="style2">
-                <li><a href="#">À propos de notre entreprise</a></li>
+                <li><a href="https://www.ece.fr/ecole-ingenieur/">À propos de notre entreprise</a></li>
               </ul>
             </section>
 
@@ -159,7 +158,6 @@
               <h3>Vendez !</h3>
               <ul class="style2">
                 <li><a href="sell.html">Vendez sur ECE-Amazon</a></li>
-                <li><a href="#">Devenez partenaires</a></li>
               </ul>
             </section>
 
@@ -178,8 +176,7 @@
         </div>
 
       </div>
-    </footer>
   </div>
-</div>
+
 </body>
 </html>

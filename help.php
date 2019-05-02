@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <link rel="stylesheet" type="text/css" href="ventesFlash.css"/>
+   <link rel="stylesheet" type="text/css" href="help.css"/>
 
   <nav>
     <!--Insertion du logo -->
@@ -53,91 +53,30 @@
 </nav>
 </head>
 
-
 <body>
-<!-- Saut de ligne -->
 
-<br>
+<!-- Principal -->
+        <div id="main-wrapper">
+          <div class="container">
+            <div class="row gtr-200">
+              <div class="col-8 col-12-medium">
+                <div id="content">
 
-<!-- Livre -->
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Livres (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="lettresPersanes2.jpg" style="width:auto; height:190px;">
-        <img src="harryPotter.jpg" style="width:auto; height:190px;">
-        <img src="lettresPersanes.jpeg" style="width:auto; height:190px;">
-        <img src="miserables.jpg" style="width:auto; height:190px;">
-      </div>
-    </div>
-  </div>
-  <!-- Musique -->
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Musique (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="music1.jpg" style="width:130px; height:130px;">
-        <img src="music2.jpg" style="width:130px; height:130px;">
-        <img src="music3.jpg" style="width:130px; height:130px;">
-        <img src="music4.jpg" style="width:auto; height:150px;">
-        <img src="music5.jpg" style="width:auto; height:150px;">
-      </div>
-    </div>
-  </div>
-<!-- Vêtements -->
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Vêtements (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="clothes1.jpg" style="width:auto; height:130px;">
-        <img src="clothes2.jpeg" style="width:auto; height:130px;">
-        <img src="clothes3.jpg" style="width:auto; height:130px;">
-        <img src="clothes4.jpg" style="width:auto; height:130px;">
-        <img src="clothes5.jpeg" style="width:auto; height:130px;">
-        <img src="clothes6.jpeg" style="width:auto; height:130px;">
+                  <!-- Contenu de la page aide -->
+                    <article>
 
-      </div>
-    </div>
-  </div>
-<!-- Sports et loisirs -->
-<div class="card">
-    <div class="card-header" id="headingFour">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Sports et loisirs (cliquez pour afficher)
-        </button>
-      </h2>
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
-        <img src="sports1.jpg" style="width:auto; height:130px;">
-        <img src="sports2.jpg" style="width:auto; height:130px;">
-        <img src="sports3.jpg" style="width:auto; height:130px;">
-        <img src="sports4.jpg" style="width:auto; height:130px;">
-        <img src="sports5.jpg" style="width:auto; height:130px;">
-      </div>
-    </div>
-  </div>
-</div>
+                      <h2>Vous rencontrez un problème ? Besoin d'aide ?</h2>
+
+                      <p><img src="frustrationcomputer.jpg" class="d-block w-100" alt="Image rubrique aide"></p>
+
+                      <h3>Si vous recevez des emails ou messages suspicieux</h3>
+
+                      <p>Si vous avez reçu un e-mail ou un SMS inattendu ou suspicieux concernant votre compte Ece-Amazon, ou une commande que vous n'avez pas passée, veuillez dans un premier temps vous rendre sur notre page d'Aide afin de déterminer si l’e-mail provient réellement de notre entreprise. Si vous souhaitez simplement nous informer que vous avez reçu un e-mail suspicieux, faites suivre le message à l'adresse suivante stop-arnaque@edu.ece.fr. Si vous avez besoin de plus d'informations nécéssaires veullez contacter notre numéro client : 01 42 92 81 00.</p>
+                    </article>
+
+                </div>
+              </div>  
+
 
   <!-- Bas de page -->
 
