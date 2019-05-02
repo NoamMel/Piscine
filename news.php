@@ -44,7 +44,7 @@
         <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="ajout-article.html">Vendre</a>
+        <a class="nav-link" href="register-admin.html">Vendre</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href= "register-admin.html">Admin</a>
