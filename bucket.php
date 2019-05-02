@@ -27,4 +27,22 @@ class panier{
 
 	}
 
+<?php
+//Calcule le montant total du panier
+function montant_panier()
+{
+    //initialisation du montant à O
+    $montant = 0;
+    // Comptage des articles
+    $nb_articles = count($_SESSION['panier']['id_article']);
+    // Calcul du total
+    for($i = 0; $i < $nb_articles; $i++)
+    {
+        $montant += $_SESSION['panier']['qte'][$i] * $_SESSION['panier']['prix'][$i];
+    }
+    //Retourner le résultat
+    return $montant;
+}
+?>
+
 }
