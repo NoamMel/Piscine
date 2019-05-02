@@ -62,7 +62,7 @@
   <br>
   <h2>Ajout/retrait d'un article</h2>
   <br>
-  <form method="post" action="">
+  <form method="post" action="ajout-article.php">
     <div class="form-row">
       <div class="form-group col-md-4" style="float:none; margin-left: 25%;">
         <label for="titre">Titre</label>
@@ -80,10 +80,10 @@
         <br>
       <select class="form-control" name="categorie">
       <option>Sélectionnez une catégorie</option>
-      <option name="livre">Livres</option>
-      <option name="vetement">Vêtements</option>
-      <option name="musique">Musiques</option>
-      <option name="sport">Sports et Loisirs</option>
+      <option value="livre">Livres</option>
+      <option value="vetement">Vêtements</option>
+      <option value="musique">Musiques</option>
+      <option value="sport">Sports et Loisirs</option>
     </select>
     </div>
       <div class="form-group col-md-4">
@@ -109,48 +109,6 @@
     </div>
   </form>
 
-  <div class="footer">
-      <div class="nav-top">
-        <a href="#">Revenir en haut de page</a>
-      </div>
-      <div class="footer-center">
-
-        <div class="row">
-          <div class="col-3 col-6-medium col-12-small">
-
-            <!-- Links -->
-            <section class="widget links">
-              <h3>A propos de nous</h3>
-              <ul class="style2">
-                <li><a href="https://www.ece.fr/ecole-ingenieur/">À propos de notre entreprise</a></li>
-              </ul>
-            </section>
-
-          </div>
-          <div class="col-3 col-6-medium col-12-small">
-            <!-- Links -->
-            <section class="widget links">
-              <h3>Vendez !</h3>
-              <ul class="style2">
-                <li><a href="sell.html">Vendez sur ECE-Amazon</a></li>
-              </ul>
-            </section>
-
-          </div>
-          <div class="col-3 col-6-medium col-12-small">
-
-            <!-- Links -->
-            <section class="widget links">
-              <h3>Besoin d'aide ?</h3>
-              <ul class="style2">
-                <li><a href="tarifs.php">Tarifs et options de livraisons</a></li>
-                <li><a href="help.php">Aide</a></li>
-              </ul>
-            </section>
-          </div>
-        </div>
-
-      </div>
   </div>
 
 </body>
