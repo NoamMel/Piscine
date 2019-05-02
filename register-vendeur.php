@@ -8,6 +8,7 @@ $db_found = mysqli_select_db($db_handle,$database);
 
 $mail=isset($_POST["mail"])?$_POST["mail"]:"";
 $pseudo=isset($_POST["pseudo"])?$_POST["pseudo"]:"";
+$imageFond=isset($_POST["imageFond"])?$_POST["imageFond"]:"";
 
 if ($db_found){
 	$sql="SELECT * FROM vendeurs";
@@ -16,6 +17,38 @@ if ($db_found){
 		if ($pseudo != ""){
 			$sql = " SELECT * FROM vendeurs WHERE Mail LIKE '%$mail%' AND Pseudo LIKE '%$pseudo%' ";
 		}
+		else {
+			?>
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Pseudo Vide !")
+			document.location.href="register-vendeur.html";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
+		}
+	}
+	else{
+		?>
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Mail vide !!")
+			document.location.href="register-vendeur.html";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
 	}
 	$result=mysqli_query($db_handle,$sql);
 	if (mysqli_num_rows($result) == 0){
@@ -35,9 +68,20 @@ if ($db_found){
 <?php
 	}
 	else {
-		echo "Vous êtes connecté";
-		header('Location: home.php');
-		echo "Vous êtes connecté";
+		?>
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Vous etes connecté !")
+			document.location.href="home.php";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
 	}
 }
 else {

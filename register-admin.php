@@ -16,6 +16,38 @@ if ($db_found){
 		if ($mdp != ""){
 			$sql = " SELECT * FROM administrateurs WHERE Mail LIKE '%$mail%' AND MotdePasse LIKE '%$mdp%' ";
 		}
+		else{
+			?>
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Mot de Passe vide !")
+			document.location.href="register-admin.html";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
+		}
+	}
+	else{
+		?>
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Mail vide !")
+			document.location.href="register-admin.html";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
 	}
 	$result=mysqli_query($db_handle,$sql);
 	if (mysqli_num_rows($result) == 0){
@@ -26,7 +58,7 @@ if ($db_found){
 			<title>redirection</title>
 			<script type="text/javascript">
 			alert("Erreur d'authentification !!")
-			document.location.href="register-vendeur.html";
+			document.location.href="register-admin.html";
 		</script>
 		</head>
 		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
@@ -35,8 +67,20 @@ if ($db_found){
 <?php
 	}
 	else {
-		echo "Vous êtes connecté";
-		header('Location: home.php');
+		?>
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Vous etes connecté !")
+			document.location.href="choix-admin.html";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
 	}
 }
 else {
