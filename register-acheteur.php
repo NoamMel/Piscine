@@ -16,6 +16,38 @@ if ($db_found){
 		if ($mdp != ""){
 			$sql = " SELECT * FROM acheteurs WHERE Mail LIKE '%$mail%' AND MotdePasse LIKE '%$mdp%' ";
 		}
+		else{
+			?>
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Mot de passe vide !")
+			document.location.href="register-acheteur.html";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
+		}
+	}
+	else{
+		?>
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Mail Vide !")
+			document.location.href="register-acheteur.html";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
 	}
 	$result=mysqli_query($db_handle,$sql);
 	if (mysqli_num_rows($result) == 0){
@@ -35,8 +67,20 @@ if ($db_found){
 <?php
 	}
 	else {
-		echo "Vous êtes connecté";
-		header('Location: home.php');
+		?>
+<!DOCTYPE html>
+		<html>
+		<head>
+			<title>redirection</title>
+			<script type="text/javascript">
+			alert("Vous êtes connecté !")
+			document.location.href="home.php";
+		</script>
+		</head>
+		<body onLoad="setTimeout('RedirectionJavascript()', 200)">
+		</body>
+		</html>
+<?php
 	}
 }
 else {
