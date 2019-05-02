@@ -144,7 +144,7 @@
     <div id="footer-wrapper">
           <footer id="footer" class="container">
             <div class="nav-top">
-              <a href="#">Revenir en haut de page</a>
+              <a href="#">Revenir en haut de page</a><br>
             </div>
             <div class="footer-center">
             <div class="row">
