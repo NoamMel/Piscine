@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="icone.png" />
-  <link rel="stylesheet" type="text/css" href="home2.css"/>
+  <link rel="stylesheet" type="text/css" href="article.css"/>
 
   <nav>
     <!--Insertion du logo -->
@@ -23,7 +23,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="active">
+          <li class="nav-item">
             <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -49,12 +49,6 @@
           <li class="nav-item">
             <a class="nav-link" href="admin.html">Admin</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ajout-article.html">Vendre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="admin.html">Admin</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -64,19 +58,56 @@
 </head>
 
 <body>
-  <br><br><br>
+  <br><br>
   <section>
     <header style="text-align:center;">
       <h2></h2>
     </header>
     <!-- Mode -->
-    <div class="card" style="width: 70rem; height: 40rem; margin-right:auto; margin-left:auto;">
-      <img src="amazonFashion.jpg" alt="livre">
-      <div class="card-body">
-        <h5 class="card-title">Nos meilleurs articles de mode</h5>
-        <p class="card-text">Composez votre look avec nos jeans bruts ou t-shirts colorés !</p>
-        <a href="#" class="btn btn-primary">Voir plus</a>
+    <div class="card" style="width: 70rem; height: 42rem; margin-right:auto; margin-left:auto;">
+        <img src="amazonFashion.jpg" style="widht: 20rem;" alt="livre">
+        <img src="musiquevinyle.jpg" style="width: 10rem" class="card-img-bottom" alt="livre">
+
+
+        <form action="bucket.html" method="post">
+      <div class="card-body text-right" style="margin-top: -550px;">
+        <h3 class="card-title">Article n</h3>
+        <p class="card-text">Description</p>
+        <textarea style="border:none; resize:none; text-align: right;" readonly="readonly" cols="63" rows="5">
+          Tailles zertyuio poiuytre rtyuioiu ytrtyui uytrtyui oiuytrtyu iopoiuy trtyuibr ghjkiuy trderf tgyhu dfghjhg fdrftgyu frtgyuyt rfghyu tghytfghy tfghyt...
+        </textarea>
+        <p>Sélectionez la taille</p>
+        <div class="input-group-prepend card-body text-right" id="selector">
+          <button class="btn btn-outline-secondary" type="button">XS</button>
+          <button class="btn btn-outline-secondary" type="button">S</button>
+          <button class="btn btn-outline-secondary" type="button">M</button>
+          <button class="btn btn-outline-secondary" type="button">L</button>
+          <button class="btn btn-outline-secondary" type="button">XL</button>
+        </div><br><br><br><br>
+        <script type="text/javascript">
+          $('#selector button').click(function() {
+    $(this).addClass(' active').siblings().removeClass('active');
+});
+        </script>
+
+        <p>Sélectionnez la couleur</p>
+        <div class="input-group-prepend card-body text-right" id="selector">
+          <button class="btn btn-outline-secondary" type="button" style="background-color: black;"></button>
+          <button class="btn btn-outline-secondary" type="button" style="background-color: red;"></button>
+          <button class="btn btn-outline-secondary" type="button" style="background-color: lightblue;"></button>
+          <button class="btn btn-outline-secondary" type="button" style="background-color: green;"></button>
+          <button class="btn btn-outline-secondary" type="button" style="background-color: grey;"></button>
+        </div><br><br><br>
+
+        <div class="form-group col-md-4 card-body text-right">
+        <label>Quantité</label>
+        <input type="number" class="form-control" name="quantite" placeholder="Quantité">
+        </div>
+        <br><br><br><br><br>
+        <input type="button" onclick="alert('L\'article a correctement été ajouté au panier');" class="btn btn-primary" name="add" value="Ajouter au panier"/>
       </div>
+
+      </form>
     </div>
 
 
