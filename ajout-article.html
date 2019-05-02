@@ -62,7 +62,7 @@
   <br>
   <h2>Ajout/retrait d'un article</h2>
   <br>
-  <form method="post" action="">
+  <form method="post" action="ajout-article.php">
     <div class="form-row">
       <div class="form-group col-md-4" style="float:none; margin-left: 25%;">
         <label for="titre">Titre</label>
@@ -80,10 +80,10 @@
         <br>
       <select class="form-control" name="categorie">
       <option>Sélectionnez une catégorie</option>
-      <option name="livre">Livres</option>
-      <option name="vetement">Vêtements</option>
-      <option name="musique">Musiques</option>
-      <option name="sport">Sports et Loisirs</option>
+      <option value="livre">Livres</option>
+      <option value="vetement">Vêtements</option>
+      <option value="musique">Musiques</option>
+      <option value="sport">Sports et Loisirs</option>
     </select>
     </div>
       <div class="form-group col-md-4">
@@ -108,6 +108,7 @@
     <input type="submit" name="supprimer" value="Supprimer l'article" class="btn btn-primary">
     </div>
   </form>
+
 
   <div class="footer">
       <div class="nav-top">
@@ -151,6 +152,7 @@
         </div>
 
       </div>
+
   </div>
 
 </body>
