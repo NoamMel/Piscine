@@ -16,22 +16,22 @@ echo "$categorie";
 
 if($_POST["ajouter"]){
 	if($db_found){
-	if($categorie=='Livres'){
+	if($categorie=='livre'){
 		$sql="INSERT INTO livres VALUES (0,'$nom','$image1','$image2','$description',$prix,$quantite)";
 		$result = mysqli_query($db_handle, $sql);
 		echo "L'article a été ajouté dans la catégorie Livres";
 	}
-	else if($categorie=='Vêtements'){
+	else if($categorie=='vetement'){
 		$sql="INSERT INTO vetements VALUES (0,'$nom','$image1','$image2','$description',$prix,$quantite)";
 		$result = mysqli_query($db_handle, $sql);
 		echo "L'article a été ajouté dans la catégorie Vetements";
 	}
-	else if($categorie=='Musiques'){
+	else if($categorie=='musique'){
 		$sql="INSERT INTO musiques VALUES (0,'$nom','$image1','$image2','$description',$prix,$quantite)";
 		$result = mysqli_query($db_handle, $sql);
 		echo "L'article a été ajouté dans la categorie Musiques";
 	}
-	else if($categorie=='Sports et Loisirs'){
+	else if($categorie=='sport'){
 		$sql="INSERT INTO sports et loisirs VALUES (0,'$nom','$image1','$image2','$description',$prix,$quantite)";
 		$result = mysqli_query($db_handle, $sql);
 		echo "L'article a été ajouté dans la catégorie Sports et Loisirs";
