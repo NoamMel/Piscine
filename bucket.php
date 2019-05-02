@@ -1,89 +1,107 @@
 <?php
-//On regarde si le panier existe, sinon on doit le créer
-class panier{
-	public function construc(){
-		if(!isset($_SESSION)){
-			session_start();
-		}
-		if(!isset($_SESSION['panier'])){
-			$_SESSION['panier']=array();
-			$_SESSION['panier']['nomProduit']=array();
-			$_SESSION['panier']['qtteProduit']=array();
-			$_SESSION['panier']['Prix']=array();
-		}
-		//on ajoute l'article dedans.
-		array_push($_SESSION['panier']['id_article'],$select['id']);
-		array_push($_SESSION['panier']['qte'],$select['qte']);
-		array_push($_SESSION['panier']['taille'],$select['taille']);
-		array_push($_SESSION['panier']['prix'],$select['prix']);
+session_start();
+include_once("fonctions-bucket.php");
 
-		// Affichage du contenu du panier
-?>
-	<pre>
-		<?php
-			var_dump($_SESSION['panier']);
-		?>
-	</pre>
+$erreur = false;
 
+$action = (isset($_POST['action'])? $_POST['action']:  (isset($_GET['action'])? $_GET['action']:null )) ;
+if($action !== null)
+{
+   if(!in_array($action,array('ajout', 'suppression', 'refresh')))
+   $erreur=true;
+
+   //récuperation des variables en POST ou GET
+   $l = (isset($_POST['l'])? $_POST['l']:  (isset($_GET['l'])? $_GET['l']:null )) ;
+   $p = (isset($_POST['p'])? $_POST['p']:  (isset($_GET['p'])? $_GET['p']:null )) ;
+   $q = (isset($_POST['q'])? $_POST['q']:  (isset($_GET['q'])? $_GET['q']:null )) ;
+
+
+   //On traite $q qui peut etre un entier simple ou un tableau d'entier
+
+   if (is_array($q)){
+      $QteArticle = array();
+      $i=0;
+      foreach ($q as $contenu){
+         $QteArticle[$i++] = intval($contenu);
+      }
+   }
+   else
+   $q = intval($q);
+
+}
+
+if (!$erreur){
+   switch($action){
+
+      Case "suppression":
+         supprimerArticle($l);
+         break;
+
+      Case "refresh" :
+         for ($i = 0 ; $i < count($QteArticle) ; $i++)
+         {
+            modifierQTeArticle($_SESSION['panier']['libelleProduit'][$i],round($QteArticle[$i]));
+         }
+         break;
+
+      Default:
+         break;
+   }
+}
+
+echo '<?xml version="1.0" encoding="utf-8"?>';?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+<title>Votre panier</title>
+</head>
+<body>
+
+<form method="post" action="bucket.php">
+<table style="width: 400px">
+	<tr>
+		<td colspan="4">Votre panier</td>
+	</tr>
+	<tr>
+		<td>Libellé</td>
+		<td>Quantité</td>
+		<td>Prix Unitaire</td>
+		<td>Action</td>
+	</tr>
+
+
+	<?php
+	if (creationPanier())
+	{
+	   $nbArticles=count($_SESSION['panier']['libelleProduit']);
+	   if ($nbArticles <= 0)
+	   echo "<tr><td>Votre panier est vide </ td></tr>";
+	   else
+	   {
+	      for ($i=0 ;$i < $nbArticles ; $i++)
+	      {
+	         echo "<tr>";
+	         echo "<td>".htmlspecialchars($_SESSION['panier']['libelleProduit'][$i])."</ td>";
+	         echo "<td><input type=\"text\" size=\"4\" name=\"q[]\" value=\"".htmlspecialchars($_SESSION['panier']['qteProduit'][$i])."\"/></td>";
+	         echo "<td>".htmlspecialchars($_SESSION['panier']['prixProduit'][$i])."</td>";
+	         echo "<td><a href=\"".htmlspecialchars("panier.php?action=suppression&l=".rawurlencode($_SESSION['panier']['libelleProduit'][$i]))."\">XX</a></td>";
+	         echo "</tr>";
+	      }
+
+	      echo "<tr><td colspan=\"2\"> </td>";
+	      echo "<td colspan=\"2\">";
+	      echo "Total : ".MontantGlobal();
+	      echo "</td></tr>";
+
+	      echo "<tr><td colspan=\"4\">";
+	      echo "<input type=\"submit\" value=\"Rafraichir\"/>";
+	      echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
+
+	      echo "</td></tr>";
+	   }
 	}
-
-<?php
-//Calcule le montant total du panier
-function montant_panier()
-{
-    //initialisation du montant à O
-    $montant = 0;
-    // Comptage des articles
-    $nb_articles = count($_SESSION['panier']['id_article']);
-    // Calcul du total
-    for($i = 0; $i < $nb_articles; $i++)
-    {
-        $montant += $_SESSION['panier']['qte'][$i] * $_SESSION['panier']['prix'][$i];
-    }
-    //Retourner le résultat
-    return $montant;
-}
-?>
-
-<?php
-// Supprimer un article du panier
-
- //    $ref_article ou $id_article Retourne TRUE si la suppression a bien été effectuée FALSE sinon, "absent" si l'article était déjà retiré du panier
-
-function supprim_article($ref_article)
-{
-    $suppression = false;
-    /* On vérifie que l'article à supprimer est bien présent dans le panier */
-    if(nombre_article($ref_article) != false)
-    {
-        // création d'un tableau de stockage des articles */
-        $panier_tmp = array("id_article"=>array(),"qte"=>array(),"taille"=>array(),"prix"=>array());
-        // Comptage des articles du panier
-        $nb_articles = count($_SESSION['panier']['id_article']);
-        // Transfert du panier dans un panier temporaire
-        for($i = 0; $i < $nb_articles; $i++)
-        {
-            // On transfère tout sauf l'article à supprimer
-            if($_SESSION['panier']['id_article'][$i] != $ref_article)
-            {
-                array_push($panier_tmp['id_article'],$_SESSION['panier']['id_article'][$i]);
-                array_push($panier_tmp['qte'],$_SESSION['panier']['qte'][$i]);
-                array_push($panier_tmp['taille'],$_SESSION['panier']['taille'][$i]);
-                array_push($panier_tmp['prix'],$_SESSION['panier']['prix'][$i]);
-            }
-        }
-        // Le transfert est terminé, on ré-initialise le panier
-        $_SESSION['panier'] = $panier_tmp;
-        //  supprime le panier temporaire mais pas nécéssaire
-        unset($panier_tmp);
-        $suppression = true;
-    }
-    else
-    {
-        //si rien à supprimer
-        $suppression = "absent";
-    }
-    return $suppression;
-}
-?>
-}
+	?>
+</table>
+</form>
+</body>
+</html>
