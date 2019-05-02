@@ -56,11 +56,11 @@ function supprim_article($ref_article)
     /* On vérifie que l'article à supprimer est bien présent dans le panier */
     if(nombre_article($ref_article) != false)
     {
-        // création d'un tableau temporaire de stockage des articles */
+        // création d'un tableau de stockage des articles */
         $panier_tmp = array("id_article"=>array(),"qte"=>array(),"taille"=>array(),"prix"=>array());
-        // Comptage des articles du panier */
+        // Comptage des articles du panier
         $nb_articles = count($_SESSION['panier']['id_article']);
-        // Transfert du panier dans le panier temporaire
+        // Transfert du panier dans un panier temporaire
         for($i = 0; $i < $nb_articles; $i++)
         {
             // On transfère tout sauf l'article à supprimer
@@ -74,7 +74,7 @@ function supprim_article($ref_article)
         }
         // Le transfert est terminé, on ré-initialise le panier
         $_SESSION['panier'] = $panier_tmp;
-        // Option : on peut maintenant supprimer notre panier temporaire:
+        //  supprime le panier temporaire mais pas nécéssaire
         unset($panier_tmp);
         $suppression = true;
     }
