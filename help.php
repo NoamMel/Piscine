@@ -42,6 +42,12 @@
       <li class="nav-item">
         <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ajout-article.html">Vendre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin.html">Admin</a>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -75,7 +81,7 @@
                     </article>
 
                 </div>
-              </div>  
+              </div>
 
 
   <!-- Bas de page -->
@@ -129,6 +135,5 @@
         </footer>
         </div>
       </footer>
-</body> 
+</body>
 </html>
-
