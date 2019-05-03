@@ -43,9 +43,9 @@
         <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
       </li>
     </ul>
-     
-       
-       
+
+
+
     </form>
   </div>
 </nav>
@@ -70,7 +70,7 @@
                     <p>
                       Les colis sont expédiés sous 24h à 72h (en jours ouvrables) sauf mention contraire, après la validation définitive de votre paiement.
                       Dans chaque fiche produit, nous vous indiquons le délai de livraison estimé à destination de la France Métropolitaine (hors Corse et Mordor).
-                      Le délai annoncé est variable selon si l'article est en stock permanent et nécessite une commande fabricant et dont le traitement et la préparation nécessitent un délai plus important : 
+                      Le délai annoncé est variable selon si l'article est en stock permanent et nécessite une commande fabricant et dont le traitement et la préparation nécessitent un délai plus important :
                     </p>
                     <p>
                       - Livré sous 1 à 4 jours ouvrés
@@ -97,7 +97,7 @@
             </div>
           </div>
         </section>
-  
+
   <!-- Bas de page -->
 
   <footer>
@@ -119,19 +119,6 @@
                     </ul>
                   </section>
               </div>
-
-              <div class="col-3 col-6-medium col-12-small">
-
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>Vendez !</h3>
-                    <ul class="style2">
-                      <li><a href="sell.html">Vendez sur ECE-Amazon</a></li>
-                    </ul>
-                  </section>
-
-              </div>
-
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
@@ -149,6 +136,5 @@
         </footer>
         </div>
       </footer>
-</body> 
+</body>
 </html>
-
