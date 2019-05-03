@@ -40,7 +40,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
+        <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="register-admin.html">Vendre</a>
@@ -114,7 +114,7 @@
   <div class="card-body">
     <h5 class="card-title">Nos articles de sport les plus vendus !</h5>
     <p class="card-text">Jetez y un coup d'oeil !</p>
-    <a href="#" class="btn btn-primary">Voir plus</a>
+    <a href="page-sportsFORM.php" class="btn btn-primary">Voir plus</a>
   </div>
 </div>
                   </section>
@@ -129,7 +129,7 @@
                       <div class="card-body">
                       <h5 class="card-title">Nos meilleurs articles de mode</h5>
                       <p class="card-text">Composez votre look avec nos jeans bruts ou t-shirts colorés !</p>
-                      <a href="#" class="btn btn-primary">Voir plus</a>
+                      <a href="page-vetementsFORM.php" class="btn btn-primary">Voir plus</a>
                     </div>
                 </div>
 
