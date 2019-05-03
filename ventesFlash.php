@@ -66,6 +66,8 @@
 <br>
 
 <!-- Livre -->
+<form action="article.php" method="post">
+
 <div class="accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
@@ -77,7 +79,7 @@
     </div>
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-        <img src="lettresPersanes2.jpg" style="width:auto; height:190px;">
+        <img src="lettresPersanes2.jpg" style="width:auto; height:190px;"/>
         <img src="harryPotter.jpg" style="width:auto; height:190px;">
         <img src="lettresPersanes.jpeg" style="width:auto; height:190px;">
         <img src="miserables.jpg" style="width:auto; height:190px;">
@@ -114,12 +116,11 @@
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-        <img src="clothes1.jpg" style="width:auto; height:130px;">
-        <img src="clothes2.jpeg" style="width:auto; height:130px;">
-        <img src="clothes3.jpg" style="width:auto; height:130px;">
-        <img src="clothes4.jpg" style="width:auto; height:130px;">
-        <img src="clothes5.jpeg" style="width:auto; height:130px;">
-        <img src="clothes6.jpeg" style="width:auto; height:130px;">
+        <button type="submit" name="clothes2"><img src="clothes2.jpeg" style="width:auto; height:130px;"></button>
+        <button type="submit" name="clothes3"><img src="clothes3.jpg" style="width:auto; height:130px;"></button>
+        <button type="submit" name="clothes4"><img src="clothes4.jpg" style="width:auto; height:130px;"></button>
+        <button type="submit" name="clothes5"><img src="clothes5.jpeg" style="width:auto; height:130px;"></button>
+        <button type="submit" name="clothes6"><img src="clothes6.jpeg" style="width:auto; height:130px;"></button>
 
       </div>
     </div>
@@ -145,6 +146,7 @@
   </div>
 </div>
 
+</form>
   <!-- Bas de page -->
 
   <footer>

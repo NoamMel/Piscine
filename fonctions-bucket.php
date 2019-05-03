@@ -4,7 +4,7 @@ class panier{
 	public function construc(){
 		if(!isset($_SESSION)){
 			session_start();
-		}
+	 }
 		if(!isset($_SESSION['panier'])){
 			$_SESSION['panier']=array();
 			$_SESSION['panier']['nomProduit']=array();
@@ -18,16 +18,12 @@ class panier{
 		array_push($_SESSION['panier']['prix'],$select['prix']);
 
 		// Affichage du contenu du panier
-?>
-	<pre>
-		<?php
+	echo "<pre>";
 			var_dump($_SESSION['panier']);
-		?>
-	</pre>
+	echo "</pre>";
 
 	}
 
-<?php
 //Calcule le montant total du panier
 function montant_panier()
 {
@@ -43,9 +39,7 @@ function montant_panier()
     //Retourner le résultat
     return $montant;
 }
-?>
 
-<?php
 // Supprimer un article du panier
 
  //    $ref_article ou $id_article Retourne TRUE si la suppression a bien été effectuée FALSE sinon, "absent" si l'article était déjà retiré du panier
@@ -85,5 +79,5 @@ function supprim_article($ref_article)
     }
     return $suppression;
 }
-?>
 }
+?>

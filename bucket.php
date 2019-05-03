@@ -71,8 +71,8 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 
 
 	<?php
-	if (creationPanier())
-	{
+	// if (creationPanier())
+  if (!isset($_SESSION)){
 	   $nbArticles=count($_SESSION['panier']['libelleProduit']);
 	   if ($nbArticles <= 0)
 	   echo "<tr><td>Votre panier est vide </ td></tr>";
