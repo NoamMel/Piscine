@@ -101,7 +101,7 @@
         <p class="card-text">Description</p>
         <textarea style="border:none; resize:none; text-align: right;" readonly="readonly" cols="63" rows="5">
           <!-- Dynamique -->
-          Tailles zertyuio poiuytre rtyuioiu ytrtyui uytrtyui oiuytrtyu iopoiuy trtyuibr ghjkiuy trderf
+          Description de l'article...
         <!-- Statique -->
         </textarea>
         <p>Sélectionez la taille</p>
