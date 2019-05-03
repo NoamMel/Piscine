@@ -51,16 +51,30 @@
 </head>
 </head>
 <body>
+	<br>
 	<div id="panier">
+		<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Libellé</th>
+      <th scope="col">Prix Unitaire</th>
+			<th scope="col">Catégorie</th>
+    </tr>
+  </thead>
+	<tbody>
 		<?php
     		$mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
           	$requete=$mysqli->query("SELECT * FROM panier");
           	$somme=0;
+						$i=1;
           	while($ligne=$requete->fetch()){
           		?>
-          		Nom de l'article : <?php echo $ligne['Nom']; ?> <br>
-          		Catégorie de l'article : <?php echo $ligne['Categorie']; ?> <br>
-          		Prix de l'article : <?php echo $ligne['Prix']; ?> € <br>
+          		<!-- Nom de l'article :--><tr>
+							<td> <?php echo $i; ?> </td>
+							<td> <?php echo $ligne['Nom']; ?> </td>
+          		<!--Catégorie de l'article : --><td><?php echo $ligne['Prix']; ?> €</td>
+          		<!--Prix de l'article : --><td><?php echo $ligne['Categorie']; ?></td>
           		<form method="POST" action="bucket.php">
           		<input type="hidden" name="nom" value=" <?php echo $ligne['Nom']; ?>">
           		<input type="hidden" name="categorie" value=" <?php echo $ligne['Categorie'];?>">
@@ -68,12 +82,20 @@
           		<?php
 
           		$somme+=$ligne['Prix'];
+							$i+=1;
 
           	}
           	?>
-          		<input type="submit" name="payer" value="Passer au paiement">
+					</table>
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<div style="float:right;">
+							Prix total a payer : <?php echo $somme; ?> €.
+					</div>
+					<br><br>
+          		<input type="submit" name="payer" style="float: right;" value="Passer au paiement">
           	</form>
-          	Prix total a payer : <?php echo $somme; ?> €.
+
           </div>
 </body>
 </html>

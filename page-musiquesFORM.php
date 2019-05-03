@@ -69,8 +69,8 @@
           	while($ligne=$requete->fetch()){
           		?>
 					<div class="card" style="width: 70rem; height: 26rem; margin-right:auto; margin-left:auto;">
-          		<img style="height: 225px; max-width: 225px;" src="<?php echo $ligne['Photo 1']; ?>">
-          		<img style="height: 225px; max-width: 225px;" src="<?php echo $ligne['Photo 2']; ?>">
+          		<img style="height: 225px; max-width: 225px;" src="<?php echo $ligne['Photo1']; ?>">
+          		<img style="height: 225px; max-width: 225px;" src="<?php echo $ligne['Photo2']; ?>">
 						<div class="card" style="border:none; width: 55rem; height: 16rem; margin-top: -400px; margin-left: 230px;">
 							<div class="nom-article" style="font-size: 2vw;">
 								<?php echo $ligne['Nom']; ?><br>

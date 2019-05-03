@@ -71,7 +71,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 
 
 	<?php
-	if (creationPanier())
+	if (!isset($_SESSION))
 	{
 	   $nbArticles=count($_SESSION['panier']['libelleProduit']);
 	   if ($nbArticles <= 0)
@@ -105,4 +105,3 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 </form>
 </body>
 </html>
-
