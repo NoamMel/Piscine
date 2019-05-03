@@ -44,10 +44,10 @@
             <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ajout-article.html">Vendre</a>
+            <a class="nav-link" href="register-admin.html">Vendre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="admin.html">Admin</a>
+            <a class="nav-link" href= "register-admin.html">Admin</a>
           </li>
         </ul>
       </div>
@@ -58,23 +58,46 @@
 </head>
 
 <body>
-  <br><br>
+  <br>
   <section>
     <header style="text-align:center;">
       <h2></h2>
     </header>
     <!-- Mode -->
-    <div class="card" style="width: 70rem; height: 42rem; margin-right:auto; margin-left:auto;">
-        <img src="amazonFashion.jpg" style="widht: 20rem;" alt="livre">
+    <div class="card" style="width: 70rem; height: 50rem; margin-right:auto; margin-left:auto;">
+      <?php
+
+      if(isset($_REQUEST['clothes2'])){
+        echo '<img src="clothes2.jpeg" style="display: block; width: auto; height: 550px;" alt="livre">';
+      }
+      if(isset($_REQUEST['clothes3'])){
+        echo '<img src="clothes3.jpg" style="display: block; width: auto; height: 550px;" alt="livre">';
+      }
+      if(isset($_REQUEST['clothes4'])){
+        echo '<img src="clothes4.jpg" style="display: block; width: auto; height: 550px;" alt="livre">';
+      }
+      if(isset($_REQUEST['clothes5'])){
+        echo '<img src="clothes5.jpeg" style="display: block; width: auto; height: 550px;" alt="livre">';
+      }
+      if(isset($_REQUEST['clothes6'])){
+        echo '<img src="clothes6.jpeg" style="display: block; width: auto; height: 550px;" alt="livre">';
+      }
+
+       ?>
+        <!-- <img src="amazonFashion.jpg" style="height: 550px;" alt="livre"> -->
         <img src="musiquevinyle.jpg" style="width: 10rem" class="card-img-bottom" alt="livre">
 
 
         <form action="bucket.html" method="post">
-      <div class="card-body text-right" style="margin-top: -550px;">
+      <div class="card-body text-right" style="margin-top: -680px;">
+        <!-- Dynamique -->
         <h3 class="card-title">Article n</h3>
+        <!-- Statique -->
         <p class="card-text">Description</p>
         <textarea style="border:none; resize:none; text-align: right;" readonly="readonly" cols="63" rows="5">
-          Tailles zertyuio poiuytre rtyuioiu ytrtyui uytrtyui oiuytrtyu iopoiuy trtyuibr ghjkiuy trderf tgyhu dfghjhg fdrftgyu frtgyuyt rfghyu tghytfghy tfghyt...
+          <!-- Dynamique -->
+          Tailles zertyuio poiuytre rtyuioiu ytrtyui uytrtyui oiuytrtyu iopoiuy trtyuibr ghjkiuy trderf
+        <!-- Statique -->
         </textarea>
         <p>Sélectionez la taille</p>
         <div class="input-group-prepend card-body text-right" id="selector">
@@ -99,11 +122,7 @@
           <button class="btn btn-outline-secondary" type="button" style="background-color: grey;"></button>
         </div><br><br><br>
 
-        <div class="form-group col-md-4 card-body text-right">
-        <label>Quantité</label>
-        <input type="number" class="form-control" name="quantite" placeholder="Quantité">
-        </div>
-        <br><br><br><br><br>
+        <br><br><br>
         <input type="button" onclick="alert('L\'article a correctement été ajouté au panier');" class="btn btn-primary" name="add" value="Ajouter au panier"/>
       </div>
 
