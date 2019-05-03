@@ -80,12 +80,16 @@
           <!--Mettre les infos personnelles avec du php et BDD, nom, prenom, mail, tel etc...-->
          <h2>Profil de <?php echo $userinfo['Prenom']; ?></h2>
          <br /><br />
-         Pseudo = <?php echo $userinfo['Pseudo']; ?>
+         Nom : <?php echo $userinfo['Nom']; ?>
          <br />
-         Mail = <?php echo $userinfo['Mail']; ?>
+         Prénom : <?php echo $userinfo['Prenom']; ?>
          <br />
-         }
-
+         Pseudo : <?php echo $userinfo['Pseudo']; ?>
+         <br />
+         Mail : <?php echo $userinfo['Mail']; ?>
+         <br />
+         Mot de passe : <?php echo $userinfo['MotdePasse']; ?>
+         <br />
         </div>
       </div>
     </div>
