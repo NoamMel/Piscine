@@ -17,6 +17,9 @@ if ($db_found){
 			$sql = " SELECT * FROM acheteurs WHERE Mail LIKE '%$mail%' AND MotdePasse LIKE '%$mdp%' ";
 		}
 		else{
+			// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
+			//la valeur 0
+			//$user_connexion=0;
 			?>
 <!DOCTYPE html>
 		<html>
@@ -34,6 +37,9 @@ if ($db_found){
 		}
 	}
 	else{
+		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
+		//la valeur 0
+		//$user_connexion=0;
 		?>
 <!DOCTYPE html>
 		<html>
@@ -51,6 +57,9 @@ if ($db_found){
 	}
 	$result=mysqli_query($db_handle,$sql);
 	if (mysqli_num_rows($result) == 0){
+		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
+		//la valeur 0
+		//$user_connexion=0;
 ?>
 <!DOCTYPE html>
 		<html>
@@ -67,6 +76,10 @@ if ($db_found){
 <?php
 	}
 	else {
+
+		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
+		//la valeur 1
+		//$user_connexion=1;
 		?>
 <!DOCTYPE html>
 		<html>
