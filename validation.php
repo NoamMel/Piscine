@@ -2,21 +2,21 @@
 if (isset($_POST['mailform']))
 {
 	ini_set( 'display_errors', 1 );
- 
+
     error_reporting( E_ALL );
- 
+
     $from = "theodorasafi@me.com";
- 
-    $to = "theodora.safi@edu.ece.fr";
- 
+
+    $to = "$mail";
+
     $subject = "Confirmation commande";
- 
+
     $message = "Votre commande a bien été passée, nous vous remercions de votre confiance";
- 
+
     $headers = "From: ECE-Amazon".$from;
- 
+
     mail($to,$subject,$message, $headers);
- 
+
     echo "Votre commande a bien été passée. À bientôt sur ECE-Amazon ;) ";
 }
 ?>
