@@ -30,12 +30,12 @@
             <a class="nav-link" href="ventesFlash.php">Ventes Flash</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="account.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="account.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Votre compte
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="account.html">Vos informations</a>
-              <a class="dropdown-item" href="account.html">Vos commandes</a>
+              <a class="dropdown-item" href="account.php">Vos informations</a>
+              <a class="dropdown-item" href="account.php">Vos commandes</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="register.html">Vous connecter</a> <!-- Register.php -->
             </div>
@@ -71,20 +71,33 @@
   </p>
       <div class="collapse multi-collapse" id="multiCollapseExample1">
         <div class="card card-body">
-          Mettre l'adresse de livraison
+          <!--Mettre l'adresse de livraison -->
+          Adresse de livraison : <?php echo $userinfo['Adresse']; ?>
       </div>
     </div>
       <div class="collapse multi-collapse" id="multiCollapseExample2">
         <div class="card card-body">
-          Mettre les infos personnelles avec du php et BDD, nom, prenom, mail, tel etc...
+          <!--Mettre les infos personnelles avec du php et BDD, nom, prenom, mail, tel etc...-->
+         <h2>Profil de <?php echo $userinfo['Prenom']; ?></h2>
+         <br /><br />
+         Nom : <?php echo $userinfo['Nom']; ?>
+         <br />
+         Prénom : <?php echo $userinfo['Prenom']; ?>
+         <br />
+         Pseudo : <?php echo $userinfo['Pseudo']; ?>
+         <br />
+         Mail : <?php echo $userinfo['Mail']; ?>
+         <br />
+         Mot de passe : <?php echo $userinfo['MotdePasse']; ?>
+         <br />
         </div>
       </div>
     </div>
   <section style="float:right;">
-  <div class="card" style="width: 25rem; margin-left:890px; margin-top:-56px;">
+  <div class="card" style="width: 25rem;height :17rem; margin-left:890px; margin-top:-56px;">
     <!-- Mettre photo de profil -->
     <p>Votre photo de profil</p>
-    <a class="image featured"><img src="livre2.jpg" alt="" style="width:auto;height:200px;" /></a>
+    <a class="image featured"><img src="imageProfil.png" alt="" style="width:auto;height:200px;" /></a>
   </div>
   </section>
   </div>

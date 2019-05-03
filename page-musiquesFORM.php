@@ -57,12 +57,17 @@ header('Content-type: text/html; charset=iso-8859-1');
 
 
     <div id="boutton-article">
+<<<<<<< HEAD:page-musiquesFORM.php
     	<form method="POST" action="page-musiques.php">
+=======
+    	
+>>>>>>> 6ae71693da7fd8b823f69944f240b4e25bccf4f4:page-livresFORM.php
     		<?php
     		$mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
           	$requete=$mysqli->query("SELECT * FROM musiques");
 
           	while($ligne=$requete->fetch()){
+<<<<<<< HEAD:page-musiquesFORM.php
         ?>
 				<div class="card" style="width: 70rem; height: 26rem; margin-right:auto; margin-left:auto;">
 							<div id="photo1-article">
@@ -99,10 +104,39 @@ header('Content-type: text/html; charset=iso-8859-1');
 					</div>
 					<br><br>
 
+=======
+          		?>
+          		Nom de l'article : <?php echo $ligne['Nom']; ?> <br>
+          		Photo de l'article : <img src="<?php echo $ligne['Photo1']; ?>">
+          		Deuxieme photo de l'article : <img src="<?php echo $ligne['Photo2']; ?>">
+          		Descrpition de l'article : <?php echo $ligne['Description']; ?> <br>
+          		Prix : <?php echo $ligne['Prix']; ?> <br>
+          		Quantité restante : <?php echo $ligne['Quantite']; ?>
+          		
+          <form method="POST" action="page-livres.php">
+          		<input type="hidden" name="id" value=" <?php echo $ligne['Identification']; ?>">
+          		<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>"> 
+          			
+          		
+          		<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
+          			
+          		
+          		<input type="hidden" name="photo2" value="<?php echo $ligne['Photo2'];?>">
+          			
+          		<input type="hidden" name="description" value="<?php echo $ligne['Description'];?>">
+          			
+          		<input type="hidden" name="prix" value="<?php echo $ligne['Prix'];?>">
+          			
+          		<input type="hidden" name="quantite" value="<?php echo $ligne['Quantite'];?>">
+          			 
+          		<input type="submit" name="misdanspanier" value="Ajouter l'article dans le panier">
+          	</form>
+          
+>>>>>>> 6ae71693da7fd8b823f69944f240b4e25bccf4f4:page-livresFORM.php
           		<?php
           	}
           	?>
-    	</form>
+    	
     </div>
 
 </div>

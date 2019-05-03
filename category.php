@@ -62,9 +62,10 @@
 
 
 
-<body>
+<body style="text-align:center;">
+  <br>
   <!-- Contenu -->
-        <section id="content">
+        <section id="content" style="margin-left:350px;">
           <div class="container">
             <div class="row">
               <div class="col-3 col-12-medium">
@@ -80,10 +81,11 @@
   <div class="card-body">
     <h5 class="card-title">Nos livres les plus vendus de l'année </h5>
     <p class="card-text">Un aperçu rapide de nos meilleures ventes de l'année 2019</p>
-    <a href="page-article-livre.html" class="btn btn-primary">Voir plus</a>
+    <a href="page-livresFORM.php" class="btn btn-primary">Voir plus</a>
   </div>
 </div>
                   </section>
+<br>
                   <section>
                     <header style="text-align:center;">
                       <h2>Musique</h2>
@@ -116,37 +118,35 @@
   </div>
 </div>
                   </section>
-
-              </div>
-              <div class="col-3 col-12-medium">
-
-                <!--  Sidebar de droite -->
+<br>
                   <section>
                     <header style="text-align:center;">
                       <h2>Vêtements</h2>
                     </header>
                     <!-- Mode -->
-<div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 25rem;">
-  <img src="amazonFashion.jpg" class="card-img-top" alt="livre">
-  <div class="card-body">
-    <h5 class="card-title">Nos meilleurs articles de mode</h5>
-    <p class="card-text">Composez votre look avec nos jeans bruts ou t-shirts colorés !</p>
-    <a href="#" class="btn btn-primary">Voir plus</a>
-  </div>
-</div>
+                    <div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 25rem;">
+                      <img src="amazonFashion.jpg" class="card-img-top" alt="livre">
+                      <div class="card-body">
+                      <h5 class="card-title">Nos meilleurs articles de mode</h5>
+                      <p class="card-text">Composez votre look avec nos jeans bruts ou t-shirts colorés !</p>
+                      <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
+                </div>
 
               </div>
         </section>
 
-        <!-- Bas de page -->
+              </div>
+<br>
 
+        <!-- Bas de page -->
   <footer>
     <div id="footer-wrapper">
           <footer id="footer" class="container">
             <div class="nav-top">
-              <a href="#">Revenir en haut de page</a><br>
+              <a href="#">Revenir en haut de page</a>
             </div>
-            <div class="footer-center" style="margin-left: 500px;">
+            <div class="footer-center">
             <div class="row">
 
               <div class="col-3 col-6-medium col-12-small">
