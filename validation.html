@@ -29,12 +29,12 @@
         <a class="nav-link" href="ventesFlash.php">Ventes Flash</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="account.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="account.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Votre compte
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="account.html">Vos informations</a>
-          <a class="dropdown-item" href="account.html">Vos commandes</a>
+          <a class="dropdown-item" href="account.php">Vos informations</a>
+          <a class="dropdown-item" href="account.php">Vos commandes</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="register.html">Vous connecter</a> <!-- Register.php -->
         </div>

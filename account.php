@@ -77,7 +77,7 @@
     </div>
       <div class="collapse multi-collapse" id="multiCollapseExample2">
         <div class="card card-body">
-          Mettre les infos personnelles avec du php et BDD, nom, prenom, mail, tel etc...
+          <!--Mettre les infos personnelles avec du php et BDD, nom, prenom, mail, tel etc...-->
          <h2>Profil de <?php echo $userinfo['Prenom']; ?></h2>
          <br /><br />
          Pseudo = <?php echo $userinfo['Pseudo']; ?>
