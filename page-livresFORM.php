@@ -67,7 +67,7 @@
           		
           <form method="POST" action="page-livres.php">
           		<input type="hidden" name="id" value=" <?php echo $ligne['Identification']; ?>">
-          		<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>"> 
+          		<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>"> <br>
           			
           		
           		<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
