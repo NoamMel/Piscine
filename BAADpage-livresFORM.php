@@ -44,7 +44,7 @@ header('Content-type: text/html; charset=iso-8859-1');
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
+            <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
         </ul>
       </div>

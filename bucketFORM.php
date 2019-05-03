@@ -41,7 +41,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
+            <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
         </ul>
       </div>
@@ -63,12 +63,12 @@
           		Prix de l'article : <?php echo $ligne['Prix']; ?> € <br>
           		<form method="POST" action="bucket.php">
           		<input type="hidden" name="nom" value=" <?php echo $ligne['Nom']; ?>">
-          		<input type="hidden" name="categorie" value=" <?php echo $ligne['Categorie'];?>"> 
+          		<input type="hidden" name="categorie" value=" <?php echo $ligne['Categorie'];?>">
           		<input type="hidden" name="prix" value="<?php echo $ligne['Prix'];?>">
           		<?php
-          		
+
           		$somme+=$ligne['Prix'];
-          			
+
           	}
           	?>
           		<input type="submit" name="payer" value="Passer au paiement">
