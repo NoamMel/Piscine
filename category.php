@@ -81,7 +81,7 @@
   <div class="card-body">
     <h5 class="card-title">Nos livres les plus vendus de l'année </h5>
     <p class="card-text">Un aperçu rapide de nos meilleures ventes de l'année 2019</p>
-    <a href="page-article-livre.html" class="btn btn-primary">Voir plus</a>
+    <a href="page-livresFORM.php" class="btn btn-primary">Voir plus</a>
   </div>
 </div>
                   </section>
