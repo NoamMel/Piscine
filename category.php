@@ -62,9 +62,10 @@
 
 
 
-<body>
+<body style="text-align:center;">
+  <br>
   <!-- Contenu -->
-        <section id="content">
+        <section id="content" style="margin-left:350px;">
           <div class="container">
             <div class="row">
               <div class="col-3 col-12-medium">
@@ -117,26 +118,25 @@
 </div>
                   </section>
 
-              </div>
-              <div class="col-3 col-12-medium">
-
-                <!--  Sidebar de droite -->
                   <section>
                     <header style="text-align:center;">
                       <h2>Vêtements</h2>
                     </header>
                     <!-- Mode -->
-<div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 25rem;">
-  <img src="amazonFashion.jpg" class="card-img-top" alt="livre">
-  <div class="card-body">
-    <h5 class="card-title">Nos meilleurs articles de mode</h5>
-    <p class="card-text">Composez votre look avec nos jeans bruts ou t-shirts colorés !</p>
-    <a href="#" class="btn btn-primary">Voir plus</a>
-  </div>
-</div>
+                    <div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 25rem;">
+                      <img src="amazonFashion.jpg" class="card-img-top" alt="livre">
+                      <div class="card-body">
+                      <h5 class="card-title">Nos meilleurs articles de mode</h5>
+                      <p class="card-text">Composez votre look avec nos jeans bruts ou t-shirts colorés !</p>
+                      <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
+                </div>
 
               </div>
         </section>
+
+              </div>
+
 
         <!-- Bas de page -->
 
@@ -144,9 +144,9 @@
     <div id="footer-wrapper">
           <footer id="footer" class="container">
             <div class="nav-top">
-              <a href="#">Revenir en haut de page</a><br>
+              <a href="#">Revenir en haut de page</a>
             </div>
-            <div class="footer-center" style="margin-left: 500px;">
+            <div class="footer-center">
             <div class="row">
 
               <div class="col-3 col-6-medium col-12-small">
