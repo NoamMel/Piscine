@@ -80,7 +80,7 @@
             <div class="nav-top">
               <a href="#">Revenir en haut de page</a><br>
             </div>
-<div class="footer-center">
+<div class="footer-center" style="margin-left: 500px;">
 
             <div class="row">
               <div class="col-3 col-6-medium col-12-small">

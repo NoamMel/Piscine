@@ -64,7 +64,7 @@
 
 <body>
 
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide" style="height: 339px;" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="echoDot.jpg" class="d-block w-100" alt="Image Menu 1">
@@ -144,7 +144,7 @@
       <div class="nav-top">
         <a href="#">Revenir en haut de page</a><br>
       </div>
-      <div class="footer-center">
+      <div class="footer-center" style="margin-left: 500px;">
 
         <div class="row">
           <div class="col-3 col-6-medium col-12-small">
