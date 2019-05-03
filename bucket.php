@@ -7,7 +7,7 @@ $erreur = false;
 $action = (isset($_POST['action'])? $_POST['action']:  (isset($_GET['action'])? $_GET['action']:null )) ;
 if($action !== null)
 {
-   if(!in_array($action,array('ajout', 'suppression', 'refresh')))
+   if(!in_array($action,array('ajout', 'suppression')))
    $erreur=true;
 
    //récuperation des variables en POST ou GET
@@ -37,12 +37,12 @@ if (!$erreur){
          supprimerArticle($l);
          break;
 
-      Case "refresh" :
-         for ($i = 0 ; $i < count($QteArticle) ; $i++)
-         {
-            modifierQTeArticle($_SESSION['panier']['libelleProduit'][$i],round($QteArticle[$i]));
-         }
-         break;
+      //Case "refresh" :
+         //for ($i = 0 ; $i < count($QteArticle) ; $i++)
+         //{
+            //modifierQTeArticle($_SESSION['panier']['libelleProduit'][$i],round($QteArticle[$i]));
+         //}
+         //break;
 
       Default:
          break;
@@ -94,8 +94,8 @@ echo '<?xml version="1.0" encoding="utf-8"?>';?>
 	      echo "</td></tr>";
 
 	      echo "<tr><td colspan=\"4\">";
-	      echo "<input type=\"submit\" value=\"Rafraichir\"/>";
-	      echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
+	      //echo "<input type=\"submit\" value=\"Rafraichir\"/>";
+	      //echo "<input type=\"hidden\" name=\"action\" value=\"refresh\"/>";
 
 	      echo "</td></tr>";
 	   }
