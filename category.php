@@ -85,6 +85,7 @@
   </div>
 </div>
                   </section>
+<br>
                   <section>
                     <header style="text-align:center;">
                       <h2>Musique</h2>
@@ -117,7 +118,7 @@
   </div>
 </div>
                   </section>
-
+<br>
                   <section>
                     <header style="text-align:center;">
                       <h2>Vêtements</h2>
@@ -136,10 +137,9 @@
         </section>
 
               </div>
-
+<br>
 
         <!-- Bas de page -->
-
   <footer>
     <div id="footer-wrapper">
           <footer id="footer" class="container">
