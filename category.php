@@ -124,7 +124,7 @@
                       <h2>Vêtements</h2>
                     </header>
                     <!-- Mode -->
-                    <div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 25rem;">
+                    <div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 30rem;">
                       <img src="amazonFashion.jpg" class="card-img-top" alt="livre">
                       <div class="card-body">
                       <h5 class="card-title">Nos meilleurs articles de mode</h5>
