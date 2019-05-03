@@ -72,7 +72,7 @@
       <div class="collapse multi-collapse" id="multiCollapseExample1">
         <div class="card card-body">
           <!--Mettre l'adresse de livraison -->
-          Adresse de livraison = <?php echo $userinfo['Adresse']; ?>
+          Adresse de livraison : <?php echo $userinfo['Adresse']; ?>
       </div>
     </div>
       <div class="collapse multi-collapse" id="multiCollapseExample2">
@@ -97,7 +97,7 @@
   <div class="card" style="width: 25rem; margin-left:890px; margin-top:-56px;">
     <!-- Mettre photo de profil -->
     <p>Votre photo de profil</p>
-    <a class="image featured"><img src="livre2.jpg" alt="" style="width:auto;height:200px;" /></a>
+    <a class="image featured"><img src="imageProfil.png" alt="" style="width:auto;height:200px;" /></a>
   </div>
   </section>
   </div>
