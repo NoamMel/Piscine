@@ -96,7 +96,7 @@
   <div class="card-body">
     <h5 class="card-title">Nos meilleurs choix musicaux</h5>
     <p class="card-text">Meilleures ventes CD, sorties à venir et promotions !</p>
-    <a href="#" class="btn btn-primary">Voir plus</a>
+    <a href="page-musiquesFORM.php" class="btn btn-primary">Voir plus</a>
   </div>
 </div>
                   </section>
