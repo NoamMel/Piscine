@@ -79,7 +79,7 @@
 						</div>
 							<div class="card" style="border:none; width: 10rem; height: 10rem; bottom: 0; margin-left: 10px;">
 
-          		Prix : <?php echo $ligne['Prix']; ?> euros<br>
+          		Prix : <?php echo $ligne['Prix']; ?> euros <br>
           		Quantite restante : <?php echo $ligne['Quantite']; ?>
 
           <form method="POST" action="page-livres.php">
