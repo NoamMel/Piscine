@@ -40,7 +40,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
+        <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="register-admin.html">Vendre</a>
@@ -124,7 +124,7 @@
                       <h2>Vêtements</h2>
                     </header>
                     <!-- Mode -->
-                    <div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 30rem;">
+                    <div class="card" style="width: 18rem; margin-right:auto; margin-left:auto;height: 25rem;">
                       <img src="amazonFashion.jpg" class="card-img-top" alt="livre">
                       <div class="card-body">
                       <h5 class="card-title">Nos meilleurs articles de mode</h5>
