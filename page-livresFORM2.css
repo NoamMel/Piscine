@@ -1,9 +1,7 @@
-img{
-  /* max-width: 600px; */
-  float: left;
-}
-.card .card-body {
-  float: right;
+body
+{
+	background-color : #FAFAFA;
+
 }
 .footer {
 	background-color: #c1bfff;
