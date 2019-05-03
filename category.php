@@ -114,7 +114,7 @@
   <div class="card-body">
     <h5 class="card-title">Nos articles de sport les plus vendus !</h5>
     <p class="card-text">Jetez y un coup d'oeil !</p>
-    <a href="#" class="btn btn-primary">Voir plus</a>
+    <a href="page-sportsFORM.php" class="btn btn-primary">Voir plus</a>
   </div>
 </div>
                   </section>
@@ -129,7 +129,7 @@
                       <div class="card-body">
                       <h5 class="card-title">Nos meilleurs articles de mode</h5>
                       <p class="card-text">Composez votre look avec nos jeans bruts ou t-shirts colorés !</p>
-                      <a href="#" class="btn btn-primary">Voir plus</a>
+                      <a href="page-vetementsFORM.php" class="btn btn-primary">Voir plus</a>
                     </div>
                 </div>
 

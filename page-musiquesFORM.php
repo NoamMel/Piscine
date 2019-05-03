@@ -44,7 +44,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
+            <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="register-admin.html">Vendre</a>
@@ -61,6 +61,10 @@
 <body>
 	<br>
     <div id="boutton-article">
+
+    	<form method="POST" action="page-musiques.php">
+
+
 
     		<?php
     		$mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
@@ -79,12 +83,26 @@
 						</div>
 							<div class="card" style="border:none; width: 10rem; height: 10rem; bottom: 0; margin-left: 10px;">
 
+
           		Prix : <?php echo $ligne['Prix']; ?> euros<br>
           		Quantite restante : <?php echo $ligne['Quantite']; ?>
 
           <form method="POST" action="page-musiques.php">
           		<input type="hidden" name="id" value=" <?php echo $ligne['Identification']; ?>">
           		<input type="hidden" style="font-size: 2vw;" name="nom" value=" <?php echo $ligne['Nom'];?>"> <br>
+
+          		?>
+          		Nom de l'article : <?php echo $ligne['Nom']; ?> <br>
+          		Photo de l'article : <img src="<?php echo $ligne['Photo1']; ?>">
+          		Deuxieme photo de l'article : <img src="<?php echo $ligne['Photo2']; ?>">
+          		Descrpition de l'article : <?php echo $ligne['Description']; ?> <br>
+          		Prix : <?php echo $ligne['Prix']; ?> <br>
+          		Quantité restante : <?php echo $ligne['Quantite']; ?>
+
+          <form method="POST" action="page-livres.php">
+          		<input type="hidden" name="id" value=" <?php echo $ligne['Identification']; ?>">
+          		<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>"> <br>
+
 
 
           		<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
@@ -105,6 +123,20 @@
           		<?php
           	}
           	?>
+
+          		<input type="submit" name="misdanspanier" value="Ajouter l'article dans le panier">
+          	</form>
+
+
+          		<?php
+          	}
+          	?>
+
+    </div>
+
+</div>
+
+
 
     </div>
 
