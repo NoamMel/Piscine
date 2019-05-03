@@ -77,10 +77,10 @@
     </div>
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-        <img src="lettresPersanes2.jpg" style="width:auto; height:190px;">
-        <img src="harryPotter.jpg" style="width:auto; height:190px;">
-        <img src="lettresPersanes.jpeg" style="width:auto; height:190px;">
-        <img src="miserables.jpg" style="width:auto; height:190px;">
+        <a href="article.php"><img src="lettresPersanes2.jpg" style="width:auto; height:190px;"></a>
+        <a href="article.php"><img src="harryPotter.jpg" style="width:auto; height:190px;"></a>
+        <a href="article.php"><img src="lettresPersanes.jpeg" style="width:auto; height:190px;"></a>
+        <a href="article.php"><img src="miserables.jpg" style="width:auto; height:190px;"></a>
       </div>
     </div>
   </div>
@@ -95,11 +95,11 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div class="card-body">
-        <img src="music1.jpg" style="width:130px; height:130px;">
-        <img src="music2.jpg" style="width:130px; height:130px;">
-        <img src="music3.jpg" style="width:130px; height:130px;">
-        <img src="music4.jpg" style="width:auto; height:150px;">
-        <img src="music5.jpg" style="width:auto; height:150px;">
+        <a href="article.php"><img src="music1.jpg" style="width:130px; height:130px;"></a>
+        <a href="article.php"><img src="music2.jpg" style="width:130px; height:130px;"></a>
+        <a href="article.php"><img src="music3.jpg" style="width:130px; height:130px;"></a>
+        <a href="article.php"><img src="music4.jpg" style="width:auto; height:150px;"></a>
+        <a href="article.php"><img src="music5.jpg" style="width:auto; height:150px;"></a>
       </div>
     </div>
   </div>
@@ -114,12 +114,12 @@
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-        <img src="clothes1.jpg" style="width:auto; height:130px;">
-        <img src="clothes2.jpeg" style="width:auto; height:130px;">
-        <img src="clothes3.jpg" style="width:auto; height:130px;">
-        <img src="clothes4.jpg" style="width:auto; height:130px;">
-        <img src="clothes5.jpeg" style="width:auto; height:130px;">
-        <img src="clothes6.jpeg" style="width:auto; height:130px;">
+        <a href="article.php"><img src="clothes1.jpg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="clothes2.jpeg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="clothes3.jpg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="clothes4.jpg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="clothes5.jpeg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="clothes6.jpeg" style="width:auto; height:130px;"></a>
 
       </div>
     </div>
@@ -135,11 +135,11 @@
     </div>
     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
       <div class="card-body">
-        <img src="sports1.jpg" style="width:auto; height:130px;">
-        <img src="sports2.jpg" style="width:auto; height:130px;">
-        <img src="sports3.jpg" style="width:auto; height:130px;">
-        <img src="sports4.jpg" style="width:auto; height:130px;">
-        <img src="sports5.jpg" style="width:auto; height:130px;">
+        <a href="article.php"><img src="sports1.jpg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="sports2.jpg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="sports3.jpg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="sports4.jpg" style="width:auto; height:130px;"></a>
+        <a href="article.php"><img src="sports5.jpg" style="width:auto; height:130px;"></a>
       </div>
     </div>
   </div>
