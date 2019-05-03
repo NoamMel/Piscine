@@ -1,0 +1,18 @@
+#nom-article {
+  font-size: 2vw;
+}
+#photo1-article {
+  float: left;
+}
+#photo2-article {
+  float: left;
+}
+#prix-article {
+  float: left;
+}
+#quantite-article {
+  float: left;
+}
+#button {
+  float: left;
+}

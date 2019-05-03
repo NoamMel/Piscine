@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<?php
+header('Content-type: text/html; charset=iso-8859-1');
+?>
 	<title> kuybiu</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="icone.png" />
-    <link rel="stylesheet" type="text/css" href="home.css"/>
-    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="page-livresFORM.css"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <title>Ece-amazon.fr : meilleur site de e-commerce de France <?php /* Code PHP */ ?></title>
 
     <nav>
@@ -50,48 +53,95 @@
 </nav>
 </head>
 <body>
+	<br>
+
+
     <div id="boutton-article">
-    	<form method="POST" action="page-livres.php">
+    	<form method="POST" action="page-musiques.php">
     		<?php
     		$mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
-          	$requete=$mysqli->query("SELECT * FROM livres");
+          	$requete=$mysqli->query("SELECT * FROM musiques");
 
           	while($ligne=$requete->fetch()){
-          		?>
-          		<div id="nom-article">
-          			<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>"> 
-          			<?php echo $ligne['Nom']; ?>
-          		</div>
-          		<div id="photo1-article">
-          			<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
-          			<img src="<?php echo $ligne['Photo1']; ?>">
-          		</div>
-          		<div id="photo2-article">
-          			<input type="hidden" name="photo2" value="<?php echo $ligne['Photo2'];?>">
-          			<img src="<?php echo $ligne['Photo2']; ?>">
-          		</div>
-          		<div id="description-article">
-          			<input type="hidden" name="description" value="<?php echo $ligne['Description'];?>">
-          			<p> Description : </p> <?php echo $ligne['Description']; ?>
-          		</div>
+        ?>
+				<div class="card" style="width: 70rem; height: 26rem; margin-right:auto; margin-left:auto;">
+							<div id="photo1-article">
+								<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
+								<img style="height: 225px;" src="<?php echo $ligne['Photo1']; ?>">
+							</div>
+							<div id="photo2-article">
+								<input type="hidden" name="photo2" value="<?php echo $ligne['Photo2'];?>">
+								<img src="<?php echo $ligne['Photo2']; ?>">
+							</div>
+					<div class="card" style="border:none; width: 10rem; height: 10rem; bottom: 0; margin-left: 10px;">
           		<div id="prix-article">
           			<input type="hidden" name="prix" value="<?php echo $ligne['Prix'];?>">
-          			<p> Prix : </p> <?php echo $ligne['Prix']; ?>
+          			<p> Prix : <?php echo $ligne['Prix']; ?> </p>
           		</div>
           		<div id="quantite-article">
           			<input type="hidden" name="quantite" value="<?php echo $ligne['Quantite'];?>">
-          			 <p> Quantité restante : </p> <?php echo $ligne['Quantite']; ?>
+          			 <p> Quantite restante : <?php echo $ligne['Quantite']; ?> </p>
           		</div>
           		<div id="button">
-          			<input type="submit" name="misdanspanier" value="Ajouter l'article dans le panier">
+          			<input type="submit" name="misdanspanier" value="Ajouter au panier">
           		</div>
+					</div>
+					<div class="card" style="border:none; width: 55rem; height: 20rem; margin-top: -400px; margin-left: 220px;">
+						<div id="nom-article">
+							<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>">
+							<?php echo $ligne['Nom']; ?>
+						</div>
+						<div id="description-article">
+							<input type="hidden" name="description" value="<?php echo $ligne['Description'];?>">
+							<p> Description : </p> <?php echo $ligne['Description']; ?>
+						</div>
+					</div>
+					</div>
+					<br><br>
+
           		<?php
           	}
           	?>
     	</form>
     </div>
- 
 
+</div>
+
+
+
+  <div class="footer">
+      <div class="nav-top">
+        <a href="#">Revenir en haut de page</a><br>
+      </div>
+      <div class="footer-center" style="margin-left: 500px;">
+
+        <div class="row">
+          <div class="col-3 col-6-medium col-12-small">
+
+            <!-- Links -->
+            <section class="widget links">
+              <h3>A propos de nous</h3>
+              <ul class="style2">
+                <li><a href="https://www.ece.fr/ecole-ingenieur/">À propos de notre entreprise</a></li>
+              </ul>
+            </section>
+
+          </div>
+          <div class="col-3 col-6-medium col-12-small">
+
+            <!-- Links -->
+            <section class="widget links">
+              <h3>Besoin d'aide ?</h3>
+              <ul class="style2">
+                <li><a href="tarifs.php">Tarifs et options de livraisons</a></li>
+                <li><a href="help.php">Aide</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+      </div>
+  </div>
 
 </body>
 </html>
