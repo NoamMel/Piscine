@@ -1,3 +1,26 @@
+<?php
+if (isset($_POST['mailform']))
+{
+	ini_set( 'display_errors', 1 );
+ 
+    error_reporting( E_ALL );
+ 
+    $from = "theodorasafi@me.com";
+ 
+    $to = "theodora.safi@edu.ece.fr";
+ 
+    $subject = "Confirmation commande";
+ 
+    $message = "Votre commande a bien été passée, nous vous remercions de votre confiance";
+ 
+    $headers = "From: ECE-Amazon".$from;
+ 
+    mail($to,$subject,$message, $headers);
+ 
+    echo "Votre commande a bien été passée. À bientôt sur ECE-Amazon ;) ";
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -40,7 +63,7 @@
         </div>
       </li>
       <li class="active">
-        <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
+        <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="register-admin.html">Vendre</a>
@@ -69,6 +92,9 @@
   <div class="card-body">
     <h5 class="card-title">Vote commande a bien été enregistrée et réglée</h5>
     <p class="card-text">Merci d'avoir fait confiance à ECE-Amazon pour vos achats. A bientôt sur notre page !</p>
+    <form method="POST" action="">
+      <input type="submit" value="Recevoir un mail de confirmation" name="mailform"/>
+    </form>
     <a href="home.php" class="btn btn-primary">Revenir à la page d'accueil</a>
   </div>
 </div>
