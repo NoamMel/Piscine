@@ -51,44 +51,43 @@
 </head>
 <body>
     <div id="boutton-article">
-    	<form method="POST" action="page-livres.php">
+    	
     		<?php
     		$mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
           	$requete=$mysqli->query("SELECT * FROM livres");
 
           	while($ligne=$requete->fetch()){
           		?>
-          		<div id="nom-article">
-          			<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>"> 
-          			<?php echo $ligne['Nom']; ?>
-          		</div>
-          		<div id="photo1-article">
-          			<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
-          			<img src="<?php echo $ligne['Photo1']; ?>">
-          		</div>
-          		<div id="photo2-article">
-          			<input type="hidden" name="photo2" value="<?php echo $ligne['Photo2'];?>">
-          			<img src="<?php echo $ligne['Photo2']; ?>">
-          		</div>
-          		<div id="description-article">
-          			<input type="hidden" name="description" value="<?php echo $ligne['Description'];?>">
-          			<p> Description : </p> <?php echo $ligne['Description']; ?>
-          		</div>
-          		<div id="prix-article">
-          			<input type="hidden" name="prix" value="<?php echo $ligne['Prix'];?>">
-          			<p> Prix : </p> <?php echo $ligne['Prix']; ?>
-          		</div>
-          		<div id="quantite-article">
-          			<input type="hidden" name="quantite" value="<?php echo $ligne['Quantite'];?>">
-          			 <p> Quantité restante : </p> <?php echo $ligne['Quantite']; ?>
-          		</div>
-          		<div id="button">
-          			<input type="submit" name="misdanspanier" value="Ajouter l'article dans le panier">
-          		</div>
+          		Nom de l'article : <?php echo $ligne['Nom']; ?> <br>
+          		Photo de l'article : <img src="<?php echo $ligne['Photo1']; ?>">
+          		Deuxieme photo de l'article : <img src="<?php echo $ligne['Photo2']; ?>">
+          		Descrpition de l'article : <?php echo $ligne['Description']; ?> <br>
+          		Prix : <?php echo $ligne['Prix']; ?> <br>
+          		Quantité restante : <?php echo $ligne['Quantite']; ?>
+          		
+          <form method="POST" action="page-livres.php">
+          		<input type="hidden" name="id" value=" <?php echo $ligne['Identification']; ?>">
+          		<input type="hidden" name="nom" value=" <?php echo $ligne['Nom'];?>"> 
+          			
+          		
+          		<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
+          			
+          		
+          		<input type="hidden" name="photo2" value="<?php echo $ligne['Photo2'];?>">
+          			
+          		<input type="hidden" name="description" value="<?php echo $ligne['Description'];?>">
+          			
+          		<input type="hidden" name="prix" value="<?php echo $ligne['Prix'];?>">
+          			
+          		<input type="hidden" name="quantite" value="<?php echo $ligne['Quantite'];?>">
+          			 
+          		<input type="submit" name="misdanspanier" value="Ajouter l'article dans le panier">
+          	</form>
+          
           		<?php
           	}
           	?>
-    	</form>
+    	
     </div>
  
 
