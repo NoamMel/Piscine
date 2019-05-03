@@ -94,7 +94,7 @@
       </div>
     </div>
   <section style="float:right;">
-  <div class="card" style="width: 25rem; margin-left:890px; margin-top:-56px;">
+  <div class="card" style="width: 25rem;height :17rem; margin-left:890px; margin-top:-56px;">
     <!-- Mettre photo de profil -->
     <p>Votre photo de profil</p>
     <a class="image featured"><img src="imageProfil.png" alt="" style="width:auto;height:200px;" /></a>
