@@ -87,10 +87,10 @@
           		<input type="hidden" style="font-size: 2vw;" name="nom" value=" <?php echo $ligne['Nom'];?>"> <br>
 
 
-          		<input type="hidden" name="photo1" value="<?php echo $ligne['Photo 1'];?>">
+          		<input type="hidden" name="photo1" value="<?php echo $ligne['Photo1'];?>">
 
 
-          		<input type="hidden" name="photo2" value="<?php echo $ligne['Photo 2'];?>">
+          		<input type="hidden" name="photo2" value="<?php echo $ligne['Photo2'];?>">
 
           		<input type="hidden" name="description" value="<?php echo $ligne['Description'];?>">
 
