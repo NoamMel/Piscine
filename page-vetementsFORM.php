@@ -4,7 +4,7 @@
 		<?php
 	header('Content-type: text/html; charset=iso-8859-1');
 	?>
-	<title>Musiques - ECE Amazon</title>
+	<title>Vetements - ECE Amazon</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -44,7 +44,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
+            <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="register-admin.html">Vendre</a>
@@ -64,7 +64,7 @@
 
     		<?php
     		$mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
-          	$requete=$mysqli->query("SELECT * FROM musiques");
+          	$requete=$mysqli->query("SELECT * FROM vetements");
 
           	while($ligne=$requete->fetch()){
           		?>
@@ -82,7 +82,7 @@
           		Prix : <?php echo $ligne['Prix']; ?> euros<br>
           		Quantite restante : <?php echo $ligne['Quantite']; ?>
 
-          <form method="POST" action="page-musiques.php">
+          <form method="POST" action="page-vetements.php">
           		<input type="hidden" name="id" value=" <?php echo $ligne['Identification']; ?>">
           		<input type="hidden" style="font-size: 2vw;" name="nom" value=" <?php echo $ligne['Nom'];?>"> <br>
 
