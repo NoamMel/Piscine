@@ -159,19 +159,6 @@
                     </ul>
                   </section>
               </div>
-
-              <div class="col-3 col-6-medium col-12-small">
-
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>Vendez !</h3>
-                    <ul class="style2">
-                      <li><a href="sell.html">Vendez sur ECE-Amazon</a></li>
-                    </ul>
-                  </section>
-
-              </div>
-
               <div class="col-3 col-6-medium col-12-small">
 
                 <!-- Links -->
