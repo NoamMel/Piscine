@@ -9,7 +9,7 @@ $db_found = mysqli_select_db($db_handle,$database);
 if(isset($_POST["payer"])){
 	if($db_found){
 		$sql=$mysqli->query("DELETE FROM panier");
-		header('Location:paiement.html');
+		header('Location:register-acheteur-paiement.html');
 	}
 	else{
 		echo "database not found";

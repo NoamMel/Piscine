@@ -1,0 +1,38 @@
+body
+{
+	background-color : #FAFAFA;
+
+}
+.footer {
+	background-color: #c1bfff;
+	clear:both;
+	position: absolute;
+	right: 0;
+  	left: 0;
+	padding: 2rem;
+}
+
+.footer-center 
+{
+	text-align: center;
+}
+.nav-top 
+{
+	text-align: center;
+}
+
+#collapseOne{
+	text-align: center;
+}
+
+#collapseTwo{
+	text-align: center;
+}
+
+#collapseThree{
+	text-align: center;
+}
+
+#collapseFour{
+	text-align: center;
+}

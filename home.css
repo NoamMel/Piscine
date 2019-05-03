@@ -1,0 +1,23 @@
+body
+{
+	background-color : #FAFAFA;
+
+}
+.footer {
+	background-color: #c1bfff;
+	clear:both;
+	position: absolute;
+	right: 0;
+	left: 0;
+	padding: 2rem;
+}
+
+.footer-center
+{
+	text-align: center;
+}
+.nav-top
+{
+	text-align: center;
+}
+

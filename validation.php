@@ -1,23 +1,38 @@
 <?php
-if (isset($_POST['mailform']))
-{
-	ini_set( 'display_errors', 1 );
+$database="eceamazon";
 
-    error_reporting( E_ALL );
+$db_handle = mysqli_connect('localhost','root','');
+$db_found = mysqli_select_db($db_handle,$database);
 
-    $from = "theodorasafi@me.com";
+$NumeroCarte=isset($_POST["NumeroCarte"])?$_POST["NumeroCarte"]:"";
+$DateExpiration=isset($_POST["DateExpiration"])?$_POST["DateExpiration"]:"";
+$CodeSecurite=isset($_POST["CodeSecurite"])?$_POST["CodeSecurite"]:"";
+$NomTitulaire=isset($_POST["NomTitulaire"])?$_POST["NomTitulaire"]:"";
+$adresse1=isset($_POST["adresse1"])?$_POST["adresse1"]:"";
+$adresse2=isset($_POST["adresse2"])?$_POST["adresse2"]:"";
+$ville=isset($_POST["ville"])?$_POST["ville"]:"";
+$pays=isset($_POST["pays"])?$_POST["pays"]:"";
+$CodePostal=isset($_POST["codepostal"])?$_POST["codepostal"]:"";
+$error="";
+if($CodePostal==""){$error.="Code Postal vide <br>";}
+if($NumeroCarte==""){$error.="Numero de Carte vide <br>";}
+if($DateExpiration==""){$error.="Date d'expiration vide <br>";}
+if($CodeSecurite==""){$error.="Code de securite vide <br>";}
+if($NomTitulaire==""){$error.="Numero de Titulaire vide <br>";}
+if($adresse1==""){$error.="Adresse 1 vide <br>";}
+if($ville==""){$error.="Ville vide <br>";}
+if($pays==""){$error.="Pays vide <br>";}
+if($_POST['valider']){
+  if($db_found){
+    $sql="SELECT * FROM acheteurs";
+    if($NumeroCarte!=""){
+      $sql="SELECT * FROM acheteurs WHERE NumeroCarte LIKE '%$NumeroCarte%' ";
+      if($DateExpiration!=""){}
+    }
+    }
 
-    $to = "$mail";
-
-    $subject = "Confirmation commande";
-
-    $message = "Votre commande a bien été passée, nous vous remercions de votre confiance";
-
-    $headers = "From: ECE-Amazon".$from;
-
-    mail($to,$subject,$message, $headers);
-
-    echo "Votre commande a bien été passée. À bientôt sur ECE-Amazon ;) ";
+    }
+  }
 }
 ?>
 

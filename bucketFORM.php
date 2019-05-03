@@ -93,7 +93,7 @@
 							Prix total a payer : <?php echo $somme; ?> €.
 					</div>
 					<br><br>
-          		<input type="submit" name="payer" style="float: right;" value="Passer au paiement">
+          		<a href="register-acheteur-paiement.html"><input type="submit" name="payer" style="float: right;" value="Passer au paiement"></a>
           	</form>
 
           </div>

@@ -17,6 +17,10 @@ $ville=isset($_POST["ville"])?$_POST["ville"]:"";
 $pays=isset($_POST["pays"])?$_POST["pays"]:"";
 $telephone=isset($_POST["telephone"])?$_POST["telephone"]:"";
 $CodePostal=isset($_POST["codepostal"])?$_POST["codepostal"]:"";
+$NumeroCarte=isset($_POST["NumeroCarte"])?$_POST["NumeroCarte"]:"";
+$DateExpiration=isset($_POST["DateExpiration"])?$_POST["DateExpiration"]:"";
+$CodeSecurite=isset($_POST["CodeSecurite"])?$_POST["CodeSecurite"]:"";
+$NomTitulaire=isset($_POST["NomTitulaire"])?$_POST["NomTitulaire"]:"";
 $error="";
 if($nom==""){$error.="Nom vide <br>";}
 if($prenom==""){$error.="Prenom vide <br>";}
@@ -28,6 +32,11 @@ if($ville==""){$error.="Ville vide <br>";}
 if($pays==""){$error.="Pays vide <br>";}
 if($telephone==""){$error.="Telephone vide <br>";}
 if($CodePostal==""){$error.="Code Postal vide <br>";}
+if($NumeroCarte==""){$error.="Numero de Carte vide <br>";}
+if($DateExpiration==""){$error.="Date d'expiration vide <br>";}
+if($CodeSecurite==""){$error.="Code de securite vide <br>";}
+if($NomTitulaire==""){$error.="Numero de Titulaire vide <br>";}
+
 
 if($_POST["sinscrire"]){
 if ($db_found) {
@@ -38,7 +47,7 @@ if ($db_found) {
 		}
 		$result = mysqli_query($db_handle, $sql);
 		if (mysqli_num_rows($result) == 0) {
-			$sql="INSERT INTO acheteurs VALUES ('$nom','$prenom','$mail','$pseudo','$mdp','$adresse1','$adresse2','$ville','$CodePostal','$pays','$telephone') ";
+			$sql="INSERT INTO acheteurs VALUES ('$nom','$prenom','$mail','$pseudo','$mdp','$adresse1','$adresse2','$ville','$CodePostal','$pays','$telephone','$NumeroCarte','$DateExpiration','$CodeSecurite','$NomTitulaire') ";
 		$result = mysqli_query($db_handle, $sql);
 		?>
 		<!DOCTYPE html>
