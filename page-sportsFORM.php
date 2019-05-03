@@ -64,7 +64,7 @@
 
     		<?php
     		$mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
-          	$requete=$mysqli->query("SELECT * FROM sports et loisirs");
+          	$requete=$mysqli->query("SELECT * FROM sports");
 
           	while($ligne=$requete->fetch()){
           		?>
