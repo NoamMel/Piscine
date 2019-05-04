@@ -121,7 +121,7 @@ if($_POST['valider']){
     }
     $result = mysqli_query($db_handle, $sql);
     if (mysqli_num_rows($result) == 0){
-    
+
     // à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
     //la valeur 0
     //$user_connexion=0;
@@ -163,7 +163,7 @@ if($_POST['valider']){
     }
 
     }
-  
+
 
 ?>
 
@@ -232,6 +232,28 @@ if($_POST['valider']){
 <body>
   <br>
   <div class="card text-center">
+    <?php
+
+    if (isset($_POST['mailform']){
+        ini_set( 'display_errors', 1 );
+
+        error_reporting( E_ALL );
+
+        $from = "theodora.safi@edu.ece.fr";
+    //insérer le mail du client ligne9
+        $to = "theodora.safi@edu.ece.fr";
+
+        $subject = "PJ WEB2019";
+
+        $message = "ECE-Amazon votre commande";
+
+        $headers = "From: ECE-Amazon".$from;
+
+        mail($to,$subject,$message, $headers);
+        // fermeture du if
+        }
+        echo "Le paiement a bien été effectué et votre commande a bien été passée. À bientôt sur ECE-Amazon ;) ";
+    ?>
   <div class="card-header">
     Confirmation de commande
   </div>
