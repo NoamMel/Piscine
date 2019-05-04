@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `acheteurs` (
   `DateExpiration` varchar(5) NOT NULL,
   `CodeSecurite` varchar(3) NOT NULL,
   `NomTitulaire` varchar(100) NOT NULL,
-  --`connect` int(1) NOT NULL, --
+  `Connect` int(1) NOT NULL,
   PRIMARY KEY (`Mail`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `administrateurs` (
   `Pseudo` varchar(50) NOT NULL,
   `MotdePasse` varchar(255) NOT NULL,
   `Adresse` varchar(255) NOT NULL,
-  --`connect` int(1) NOT NULL, --
+  `Connect` int(1) NOT NULL,
   PRIMARY KEY (`Mail`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `livres` (
   `Description` text NOT NULL,
   `Prix` float NOT NULL,
   `Quantite` int(10) NOT NULL,
-  --`connect` int(1) NOT NULL, --
+  `Connect` int(1) NOT NULL,
   PRIMARY KEY (`Identification`)
 ) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
 
