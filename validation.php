@@ -24,16 +24,147 @@ if($ville==""){$error.="Ville vide <br>";}
 if($pays==""){$error.="Pays vide <br>";}
 if($_POST['valider']){
   if($db_found){
-    $sql="SELECT * FROM acheteurs";
+    if($error==""){
+      $sql="SELECT * FROM acheteurs";
     if($NumeroCarte!=""){
       $sql="SELECT * FROM acheteurs WHERE NumeroCarte LIKE '%$NumeroCarte%' ";
-      if($DateExpiration!=""){}
+      if($DateExpiration!=""){
+        $sql="SELECT * FROM acheteurs WHERE NumeroCarte LIKE '%$NumeroCarte%' AND DateExpiration LIKE '%$DateExpiration%' ";
+        if ($CodeSecurite!=""){
+          $sql="SELECT * FROM acheteurs WHERE NumeroCarte LIKE '%$NumeroCarte%' AND DateExpiration LIKE '%$DateExpiration%' AND CodeSecurite LIKE '%$CodeSecurite%' ";
+          if ($NomTitulaire!=""){
+            $sql="SELECT * FROM acheteurs WHERE NumeroCarte LIKE '%$NumeroCarte%' AND DateExpiration LIKE '%$DateExpiration%' AND CodeSecurite LIKE '%$CodeSecurite%' AND NomTitulaire LIKE '%$NomTitulaire%' ";
+          }
+          else{
+            ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>redirection</title>
+      <script type="text/javascript">
+      alert("Erreur de saisie NOM TITULAIRE !")
+      document.location.href="paiement.html"
+    </script>
+    </head>
+    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
+    </body>
+    </html>
+    <?php
+          }
+        }
+        else{
+          ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>redirection</title>
+      <script type="text/javascript">
+      alert("Erreur de saisie CODE DE SECURITE !")
+      document.location.href="paiement.html"
+    </script>
+    </head>
+    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
+    </body>
+    </html>
+    <?php
+        }
+      }
+      else{
+        ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>redirection</title>
+      <script type="text/javascript">
+      alert("Erreur de saisie DATE EXPIRATION !")
+      document.location.href="paiement.html"
+    </script>
+    </head>
+    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
+    </body>
+    </html>
+    <?php
+      }
     }
+    else{
+      ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>redirection</title>
+      <script type="text/javascript">
+      alert("Erreur de saisie NUMERO DE CARTE !")
+      document.location.href="paiement.html"
+    </script>
+    </head>
+    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
+    </body>
+    </html>
+    <?php
+    }
+    }
+    else{
+      ?>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>redirection</title>
+      <script type="text/javascript">
+      alert("Erreur de validation : <?php echo "$error" ?> !")
+      document.location.href="paiement.html"
+    </script>
+    </head>
+    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
+    </body>
+    </html>
+    <?php
+    }
+    $result = mysqli_query($db_handle, $sql);
+    if (mysqli_num_rows($result) == 0){
+    
+    // à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
+    //la valeur 0
+    //$user_connexion=0;
+?>
+<!DOCTYPE html>
+    <html>
+    <head>
+      <title>redirection</title>
+      <script type="text/javascript">
+      alert("Erreur d'authentification ! !!")
+      document.location.href="paiement.html";
+    </script>
+    </head>
+    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
+    </body>
+    </html>
+<?php
+  }
+  else{
+    ?>
+<!DOCTYPE html>
+    <html>
+    <head>
+      <title>redirection</title>
+      <script type="text/javascript">
+      alert("Votre paiement a été validé !")
+      document.location.href="validation.php";
+    </script>
+    </head>
+    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
+    </body>
+    </html>
+<?php
+  }
+
+    }
+    else{
+      echo "DATABASE NOT FOUND";
     }
 
     }
-  }
-}
+  
+
 ?>
 
 <!DOCTYPE html>
