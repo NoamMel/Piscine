@@ -17,6 +17,8 @@ if ($db_found){
 			$sql = " SELECT * FROM acheteurs WHERE Mail LIKE '%$mail%' AND MotdePasse LIKE '%$mdp%' ";
 		}
 		else{
+
+			$connect="UPDATE acheteurs SET Connect='0'";
 			// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 			//la valeur 0
 			//$user_connexion=0;
@@ -37,6 +39,8 @@ if ($db_found){
 		}
 	}
 	else{
+
+		$connect="UPDATE acheteurs SET Connect='0'";
 		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 		//la valeur 0
 		//$user_connexion=0;
@@ -57,7 +61,8 @@ if ($db_found){
 	}
 	$result=mysqli_query($db_handle,$sql);
 	if (mysqli_num_rows($result) == 0){
-		
+
+		$connect="UPDATE acheteurs SET Connect='0'";
 		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 		//la valeur 0
 		//$user_connexion=0;
@@ -77,7 +82,7 @@ if ($db_found){
 <?php
 	}
 	else {
-
+		$connect="UPDATE acheteurs SET Connect='1'";
 		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 		//la valeur 1
 		//$user_connexion=1;

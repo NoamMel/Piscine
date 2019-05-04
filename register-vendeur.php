@@ -18,6 +18,7 @@ if ($db_found){
 			$sql = " SELECT * FROM vendeurs WHERE Mail LIKE '%$mail%' AND Pseudo LIKE '%$pseudo%' ";
 		}
 		else {
+			$connect="UPDATE vendeurs SET Connect='0'";
 			?>
 		<!DOCTYPE html>
 		<html>
@@ -35,6 +36,7 @@ if ($db_found){
 		}
 	}
 	else{
+		$connect="UPDATE vendeurs SET Connect='0'";
 		?>
 <!DOCTYPE html>
 		<html>
@@ -52,6 +54,7 @@ if ($db_found){
 	}
 	$result=mysqli_query($db_handle,$sql);
 	if (mysqli_num_rows($result) == 0){
+		$connect="UPDATE vendeurs SET Connect='0'";
 ?>
 		<!DOCTYPE html>
 		<html>
@@ -68,6 +71,7 @@ if ($db_found){
 <?php
 	}
 	else {
+		$connect="UPDATE vendeurs SET Connect='1'";
 		?>
 <!DOCTYPE html>
 		<html>
