@@ -77,7 +77,7 @@
       <div class="collapse multi-collapse" id="multiCollapseExample1">
         <div class="card card-body">
           <!--Mettre l'adresse de livraison -->
-          Adresse de livraison : <?php echo $ligne['Adresse']; ?>
+          Adresse 1 de livraison : <?php echo $ligne['Adresse1']; ?>
       </div>
     </div>
       <div class="collapse multi-collapse" id="multiCollapseExample2">
