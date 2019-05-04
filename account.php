@@ -63,6 +63,11 @@
   <br>
 <section id="content">
   <div class="container">
+  <?php
+  $mysqli= new PDO("mysql:host=localhost;dbname=eceamazon","root","");
+    $requete=$mysqli->query("SELECT * FROM acheteurs");
+    while($ligne=$requete->fetch()){
+  ?>
   <div class="form-group row">
   <div class="card" style="width: 48rem; margin-left:100px;">
     <p>
@@ -72,23 +77,23 @@
       <div class="collapse multi-collapse" id="multiCollapseExample1">
         <div class="card card-body">
           <!--Mettre l'adresse de livraison -->
-          Adresse de livraison : <?php echo $userinfo['Adresse']; ?>
+          Adresse de livraison : <?php echo $ligne['Adresse']; ?>
       </div>
     </div>
       <div class="collapse multi-collapse" id="multiCollapseExample2">
         <div class="card card-body">
           <!--Mettre les infos personnelles avec du php et BDD, nom, prenom, mail, tel etc...-->
-         <h2>Profil de <?php echo $userinfo['Prenom']; ?></h2>
+         <h2>Profil de <?php echo $ligne['Prenom']; ?></h2>
          <br /><br />
-         Nom : <?php echo $userinfo['Nom']; ?>
+         Nom : <?php echo $ligne['Nom']; ?>
          <br />
-         Prénom : <?php echo $userinfo['Prenom']; ?>
+         Prénom : <?php echo $ligne['Prenom']; ?>
          <br />
-         Pseudo : <?php echo $userinfo['Pseudo']; ?>
+         Pseudo : <?php echo $ligne['Pseudo']; ?>
          <br />
-         Mail : <?php echo $userinfo['Mail']; ?>
+         Mail : <?php echo $ligne['Mail']; ?>
          <br />
-         Mot de passe : <?php echo $userinfo['MotdePasse']; ?>
+         Mot de passe : <?php echo $ligne['MotdePasse']; ?>
          <br />
         </div>
       </div>
@@ -101,8 +106,12 @@
   </div>
   </section>
   </div>
+  <?php
+}
+?>
 </div>
 </section>
+
 <!--  Sidebar de droite -->
 
 </div>
