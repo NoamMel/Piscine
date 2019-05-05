@@ -188,7 +188,7 @@ if(isset($_POST['valider'])){
         </div>
       </li>
       <li class="active">
-        <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
+        <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="register-admin.html">Vendre</a>
