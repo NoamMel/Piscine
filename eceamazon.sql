@@ -253,6 +253,13 @@ INSERT INTO `vetements` (`Identification`, `Nom`, `Photo1`, `Photo2`, `Descripti
 (2007, 'Echarpe', 'clothes6.jpeg', '', 'Echarpe utile pour se protéger du froid : WINTER IS HERE', 10, 30);
 COMMIT;
 
+/*Création de la table connexion */
+DROP TABLE IF EXISTS `connexion`;
+CREATE TABLE IF NOT EXISTS `connexion` (
+  `Mail` varchar(100) NOT NULL,
+  `Connect` int(1) NOT NULL,
+  PRIMARY KEY (`Mail`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
