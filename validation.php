@@ -134,14 +134,14 @@ if(isset($_POST['valider'])){
     </html>
 <?php
   }
-    
+
    }
    else{
     echo "database not found";
    }
  }
 
-    
+
 
 
 ?>
@@ -156,6 +156,7 @@ if(isset($_POST['valider'])){
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="icone.png" />
    <link rel="stylesheet" type="text/css" href="validation.css"/>
 
   <nav>
@@ -231,17 +232,19 @@ if(isset($_POST['valider'])){
         mail($to,$subject,$message, $headers);
         // fermeture du if
         }
-        echo "Le paiement a bien été effectué et votre commande a bien été passée. À bientôt sur ECE-Amazon ;) ";
     ?>
   <div class="card-header">
     Confirmation de commande
   </div>
   <div class="card-body">
     <h5 class="card-title">Vote commande a bien été enregistrée et réglée</h5>
-    <p class="card-text">Merci d'avoir fait confiance à ECE-Amazon pour vos achats. A bientôt sur notre page !</p>
+    <p class="card-text">Le paiement a bien été effectué et votre commande a bien été passée.<br>
+      Merci d'avoir fait confiance à ECE-Amazon pour vos achats. À bientôt sur ECE-Amazon ;)</p>
+      <br>
     <form method="POST" action="">
-      <input type="submit" value="Recevoir un mail de confirmation" name="mailform"/>
+      <input type="submit" class="btn btn-primary" value="Recevoir un mail de confirmation" name="mailform"/>
     </form>
+    <br>
     <a href="home.php" class="btn btn-primary">Revenir à la page d'accueil</a>
   </div>
 </div>
