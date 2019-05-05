@@ -30,12 +30,12 @@
             <a class="nav-link" href="ventesFlash.php">Ventes Flash</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="account.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="account.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Votre compte
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="account.html">Vos informations</a>
-              <a class="dropdown-item" href="account.html">Vos commandes</a>
+              <a class="dropdown-item" href="account.php">Vos informations</a>
+              <a class="dropdown-item" href="account.php">Vos commandes</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="register.html">Vous connecter</a> <!-- Register.php -->
             </div>
@@ -109,14 +109,14 @@
 
         <form action="articleAJOUT.php" method="post">
       <div class="card-body text-right" style="margin-top: -680px;">
-        
+
         <h3 class="card-title"><?php echo $ligne['Nom']; ?></h3>
-        
+
         <p class="card-text">Description</p>
         <textarea style="border:none; resize:none; text-align: right;" readonly="readonly" cols="63" rows="5">
-          
+
           Description de l'article : <?php echo $ligne['Description']; ?>
-        
+
         </textarea>
         <p>Sélectionez la taille</p>
         <div class="input-group-prepend card-body text-right" id="selector">
@@ -140,10 +140,10 @@
           <button class="btn btn-outline-secondary" type="button" style="background-color: green;"></button>
           <button class="btn btn-outline-secondary" type="button" style="background-color: grey;"></button>
         </div><br><br><br>
-        Prix : <?php echo $ligne['Prix']; ?> euros 
+        Prix : <?php echo $ligne['Prix']; ?> euros
         <br><br><br>
         <input type="hidden" name="id" value=" <?php echo $ligne['Identification']; ?>">
-        <input type="hidden" style="font-size: 2vw;" name="nom" value=" <?php echo $ligne['Nom'];?>"> 
+        <input type="hidden" style="font-size: 2vw;" name="nom" value=" <?php echo $ligne['Nom'];?>">
         <input type="hidden" name="prix" value="<?php echo $ligne['Prix'];?>">
         <input type="hidden" name="quantite" value="<?php echo $ligne['Quantite'];?>">
         <input type="submit" onclick="alert('L\'article a correctement été ajouté au panier');" class="btn btn-primary" name="misdanspanier" value="Ajouter au panier"/>
