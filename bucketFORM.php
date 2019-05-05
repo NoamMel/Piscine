@@ -40,9 +40,15 @@
               <a class="dropdown-item" href="register.html">Vous connecter</a> <!-- Register.php -->
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
+					<li class="nav-item">
+		        <a class="nav-link" href="register-admin.html">Vendre</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href= "register-admin.html">Admin</a>
+		      </li>
         </ul>
       </div>
     </nav>

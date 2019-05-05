@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="icone.png" />
-   <link rel="stylesheet" type="text/css" href="home.css"/>
+   <link rel="stylesheet" type="text/css" href="ventesFlash2.css"/>
 
   <nav>
     <!--Insertion du logo -->
@@ -76,51 +76,38 @@
 
 <!-- FOOTER -->
 <div class="footer">
-          <footer id="footer" class="container">
-            <div class="nav-top">
-              <a href="#">Revenir en haut de page</a><br>
-            </div>
-<div class="footer-center" style="margin-left: 500px;">
+    <div class="nav-top">
+      <a href="#">Revenir en haut de page</a><br>
+    </div>
+    <div class="footer-center" style="margin-left: 500px;">
 
-            <div class="row">
-              <div class="col-3 col-6-medium col-12-small">
+      <div class="row">
+        <div class="col-3 col-6-medium col-12-small">
 
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>A propos de nous</h3>
-                    <ul class="style2">
-                      <li><a href="https://www.ece.fr/ecole-ingenieur/">À propos de notre entreprise</a></li>
-                    </ul>
-                  </section>
+          <!-- Links -->
+          <section class="widget links">
+            <h3>A propos de nous</h3>
+            <ul class="style2">
+              <li><a href="https://www.ece.fr/ecole-ingenieur/">À propos de notre entreprise</a></li>
+            </ul>
+          </section>
 
-              </div>
-              <div class="col-3 col-6-medium col-12-small">
+        </div>
+        <div class="col-3 col-6-medium col-12-small">
 
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>Vendez !</h3>
-                    <ul class="style2">
-                      <li><a href="sell.html">Vendez sur ECE-Amazon</a></li>
-                    </ul>
-                  </section>
-
-              </div>
-              <div class="col-3 col-6-medium col-12-small">
-
-                <!-- Links -->
-                  <section class="widget links">
-                    <h3>Besoin d'aide ?</h3>
-                    <ul class="style2">
-                      <li><a href="tarifs.php">Tarifs et options de livraisons</a></li>
-                      <li><a href="help.php">Aide</a></li>
-                    </ul>
-                  </section>
-              </div>
-            </div>
-
-          </div>
-</footer>
+          <!-- Links -->
+          <section class="widget links">
+            <h3>Besoin d'aide ?</h3>
+            <ul class="style2">
+              <li><a href="tarifs.php">Tarifs et options de livraisons</a></li>
+              <li><a href="help.php">Aide</a></li>
+            </ul>
+          </section>
         </div>
       </div>
+
+    </div>
+</div>
+
 </body>
 </html>

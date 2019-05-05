@@ -41,7 +41,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="bucket.html" tabindex="-1" aria-disabled="false">Mon panier</a>
+            <a class="nav-link" href="bucketFORM.php" tabindex="-1" aria-disabled="false">Mon panier</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="register-admin.html">Vendre</a>
@@ -115,7 +115,7 @@
         <p class="card-text">Description</p>
         <textarea style="border:none; resize:none; text-align: right;" readonly="readonly" cols="63" rows="5">
 
-          Description de l'article : <?php echo $ligne['Description']; ?>
+          <?php echo $ligne['Description']; ?>
 
         </textarea>
         <p>Sélectionez la taille</p>
