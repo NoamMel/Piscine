@@ -19,6 +19,7 @@ if ($db_found){
 		else{
 
 			$connect="UPDATE acheteurs SET Connect='0'";
+			$connect2="UPDATE connexion SET Connect='0'";
 			// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 			//la valeur 0
 			//$user_connexion=0;
@@ -41,6 +42,7 @@ if ($db_found){
 	else{
 
 		$connect="UPDATE acheteurs SET Connect='0'";
+		$connect2="UPDATE connexion SET Connect='0'";
 		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 		//la valeur 0
 		//$user_connexion=0;
@@ -63,6 +65,7 @@ if ($db_found){
 	if (mysqli_num_rows($result) == 0){
 
 		$connect="UPDATE acheteurs SET Connect='0'";
+		$connect2="UPDATE connexion SET Connect='0'";
 		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 		//la valeur 0
 		//$user_connexion=0;
@@ -83,6 +86,7 @@ if ($db_found){
 	}
 	else {
 		$connect="UPDATE acheteurs SET Connect='1'";
+		$connect2="UPDATE connexion SET Connect='1'";
 		// à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
 		//la valeur 1
 		//$user_connexion=1;

@@ -36,6 +36,7 @@ if ($db_found){
 	}
 	else{
 		$connect="UPDATE administrateurs SET Connect='0'";
+		$connect2="UPDATE connexion SET Connect='0'";
 		?>
 <!DOCTYPE html>
 		<html>
@@ -54,6 +55,7 @@ if ($db_found){
 	$result=mysqli_query($db_handle,$sql);
 	if (mysqli_num_rows($result) == 0){
 	$connect="UPDATE administrateurs SET Connect='0'";
+	$connect2="UPDATE connexion SET Connect='0'";
 ?>
 <!DOCTYPE html>
 		<html>
@@ -71,6 +73,7 @@ if ($db_found){
 	}
 	else {
 		$connect="UPDATE administrateurs SET Connect='1'";
+		$connect2="UPDATE connexion SET Connect='1'";
 		?>
 <!DOCTYPE html>
 		<html>

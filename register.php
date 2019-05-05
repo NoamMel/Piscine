@@ -80,8 +80,8 @@ if ($db_found) {
 		</html>
 		<?php
 		}
-		
-		
+
+
 	}
 	else {
 		?>
