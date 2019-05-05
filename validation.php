@@ -22,9 +22,8 @@ if($NomTitulaire==""){$error.="Numero de Titulaire vide <br>";}
 if($adresse1==""){$error.="Adresse 1 vide <br>";}
 if($ville==""){$error.="Ville vide <br>";}
 if($pays==""){$error.="Pays vide <br>";}
-if($_POST['valider']){
+if(isset($_POST['valider'])){
   if($db_found){
-    if($error==""){
       $sql="SELECT * FROM acheteurs";
     if($NumeroCarte!=""){
       $sql="SELECT * FROM acheteurs WHERE NumeroCarte LIKE '%$NumeroCarte%' ";
@@ -102,36 +101,15 @@ if($_POST['valider']){
     </html>
     <?php
     }
-    }
-    else{
-      ?>
+    $result=mysqli_query($db_handle,$sql);
+  if (mysqli_num_rows($result) == 0){
+?>
     <!DOCTYPE html>
     <html>
     <head>
       <title>redirection</title>
       <script type="text/javascript">
-      alert("Erreur de validation : <?php echo "$error" ?> !")
-      document.location.href="paiement.html"
-    </script>
-    </head>
-    <body onLoad="setTimeout('RedirectionJavascript()', 200)">
-    </body>
-    </html>
-    <?php
-    }
-    $result = mysqli_query($db_handle, $sql);
-    if (mysqli_num_rows($result) == 0){
-
-    // à vérifier, comme il y a une erreur d'authentification alors le booléen user_connexion
-    //la valeur 0
-    //$user_connexion=0;
-?>
-<!DOCTYPE html>
-    <html>
-    <head>
-      <title>redirection</title>
-      <script type="text/javascript">
-      alert("Erreur d'authentification ! !!")
+      alert("Erreur d'authentification !!")
       document.location.href="paiement.html";
     </script>
     </head>
@@ -140,14 +118,14 @@ if($_POST['valider']){
     </html>
 <?php
   }
-  else{
+  else {
     ?>
 <!DOCTYPE html>
     <html>
     <head>
       <title>redirection</title>
       <script type="text/javascript">
-      alert("Votre paiement a été validé !")
+      alert("Paiement accepté !")
       document.location.href="validation.php";
     </script>
     </head>
@@ -156,13 +134,14 @@ if($_POST['valider']){
     </html>
 <?php
   }
+    
+   }
+   else{
+    echo "database not found";
+   }
+ }
 
-    }
-    else{
-      echo "DATABASE NOT FOUND";
-    }
-
-    }
+    
 
 
 ?>
@@ -234,7 +213,7 @@ if($_POST['valider']){
   <div class="card text-center">
     <?php
 
-    if (isset($_POST['mailform']){
+    if (isset($_POST['mailform'])){
         ini_set( 'display_errors', 1 );
 
         error_reporting( E_ALL );
